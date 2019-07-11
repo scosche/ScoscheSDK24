@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
     s.name         = "ScoscheSDK24"
-    s.version      = "0.1.0"
+    s.version      = "0.1.1"
     s.summary      = "Framework for communicating with Scosche Rythmn 24"
     s.description  = <<-DESC
     Framework for communicating with Scosche Rythmn 24.
