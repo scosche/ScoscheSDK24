@@ -1,5 +1,5 @@
 framework module ScoscheSDK24 {
-  umbrella header "ScoscheSDK24-umbrella.h"
+  umbrella header "ScoscheSDK24.h"
 
   export *
   module * { export * }
