@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
     s.name         = "ScoscheSDK24"
-    s.version      = "0.1.4"
+    s.version      = "0.1.5"
     s.summary      = "Framework for communicating with Scosche Rythmn 24"
     s.description  = <<-DESC
     Framework for communicating with Scosche Rythmn 24.
@@ -13,6 +13,4 @@ Pod::Spec.new do |s|
     s.platform = :ios
     s.swift_version = "4.2"
     s.ios.deployment_target  = "12.0"
-    s.dependency   "BluetoothMessageProtocol"
-    s.dependency   "GBVersionTracking"
 end
