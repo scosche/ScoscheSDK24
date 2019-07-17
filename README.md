@@ -1,4 +1,56 @@
+# Cocoapod SDK for Scosche Rhythm series sensors
+
+
+### Rhythm+ And Rhythm 24 Sensors
+
+Rhythm24™ optically measures blood flow and body movement to ensure the most accurate data possible. With its dual-mode radio you can simultaneously transmit your heart rate to multiple ANT+ displays (Garmin® watches, cycling computers, fitness equipment and more) and to your favorite Bluetooth® Smart enabled watch or smartphone app. [More Info](https://www.scosche.com/rhythm24)
+
+### Bluetooth® Smart and ANT+
+Great for use with smartphones, tablets, smart and sport watches, exercise equipment and many other devices that support Bluetooth® Smart or ANT+ heart rate data.
+
+# Getting Started
+This repositorty contains the ScoscheSDK24 Framework. This framework may be used to integrate Scosche Rhythm 24 and Rhythm+ activity sensor data into iOS apps.
+
+### Build dependancies
+* Xcode 10.1 and above
+* Cocoapods 1.0 and above
+* Physical iOS device with BLE to test (Note: Simulator does not have a BLE radio)
+* Scosche Rhythm+ or Rhythm 24 sensor
+
+
+### PodFile
+```
+platform :ios, '12.0'
+
+target 'YourAppNameHere' do
+  use_frameworks!
+
+  pod 'ScoscheSDK24', :git => 'https://github.com/scosche/ScoscheSDK24.git'
+  pod 'BluetoothMessageProtocol', '0.18.0'
+  pod 'DataDecoder', '4.3'
+  pod 'GBVersionTracking'
+
+end
+
+post_install do |installer|
+    installer.pods_project.build_configurations.each do |config|
+        config.build_settings.delete('CODE_SIGNING_ALLOWED')
+        config.build_settings.delete('CODE_SIGNING_REQUIRED')
+    end
+end
+```
+After modifying the podfile. Open Terminal and type the following commands into Terminal.
+
+* __cd__ /User/You/Development/Path/ (Note: you can drag and drop the podfile into terminal to generate the path. You will just need to remove the `/podfile` from the path after it appears)
+
+* pod install
+
+
 ### ScoscheViewController
+The ScoscheViewController UIViewController class is an extention of a standard view controller with all the required fuctions and variables needed to communicate with Scosche Rhythm 24 and + sensors.
+
+Use the ScoscheViewController class whenever you wish to communicate or display data from the sensors. See the Scosche Demo App here: [More Info](https://www.scosche.com/rhythm24)
+
 Below is a list of data that can be used in any ScoscheView Controller Simply by passing in `monitor: ScoscheMonitor = chosen sensor`. Monitor is a shared object and can be set internally or globally as needed.
 ```
 /// Sport modes
