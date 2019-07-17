@@ -49,7 +49,7 @@ After modifying the podfile. Open Terminal and type the following commands into 
 ### ScoscheViewController
 The ScoscheViewController UIViewController class is an extention of a standard view controller with all the required fuctions and variables needed to communicate with Scosche Rhythm 24 and + sensors.
 
-Use the ScoscheViewController class whenever you wish to communicate or display data from the sensors. See the Scosche Demo App here: [More Info](https://www.scosche.com/rhythm24)
+Use the ScoscheViewController class whenever you wish to communicate or display data from the sensors. See the Scosche Demo App here: [More Info](https://github.com/scosche/DemoSDK24App)
 
 Below is a list of data that can be used in any ScoscheView Controller Simply by passing in `monitor: ScoscheMonitor = chosen sensor`. Monitor is a shared object and can be set internally or globally as needed.
 ```
