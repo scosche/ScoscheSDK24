@@ -14,7 +14,7 @@ This repositorty contains the ScoscheSDK24 Framework. This framework may be used
 ### Build dependancies
 * Xcode 10.1 and above
 * Cocoapods 1.0 and above
-* Physical iOS device with BLE to test (Note: Simulator does not have a BLE radio)
+* Physical iOS 11.0 & above device with Bluetooth to test (Note: Simulator does not have a BLE radio, and can not be used to test communication)
 * Scosche Rhythm+ or Rhythm 24 sensor
 
 
