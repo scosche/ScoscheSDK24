@@ -175,7 +175,7 @@ public var hrZoneFour: Int
 ```
 ### Functions
 ```
-// ScoscheDeviceConnect: Connects a device to ScoscheViewController
+/// ScoscheDeviceConnect: Connects a device to ScoscheViewController
 ///
 /// - Precondition: ScoscheDeviceScan(monitorView: SchoscheViewController), a monitor must be found in the scan to connect to.
 ///
@@ -187,7 +187,6 @@ public var hrZoneFour: Int
 /// - Returns monitorView: onModeChangeAction
 /// - Returns monitorView: connected
 public func ScoscheDeviceConnect(monitor: ScoscheMonitor, monitorView: SchoscheViewController)
-
 
 /// Update Loop
 public var onBluetoothDataUpdate: ((_: CBUUID) -> Void)?
