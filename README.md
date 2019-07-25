@@ -173,3 +173,76 @@ public var hrZoneThree: Int
 /// User Heart Rate Zone 4 
 public var hrZoneFour: Int
 ```
+### Functions
+```
+// ScoscheDeviceConnect: Connects a device to ScoscheViewController
+///
+/// - Precondition: ScoscheDeviceScan(monitorView: SchoscheViewController), a monitor must be found in the scan to connect to.
+///
+/// - Parameter monitor: ScoscheMonitor
+/// - Parameter monitorView: SchoscheViewController
+///
+/// - Returns monitorView: fitFileList
+/// - Returns monitorView: onBluetoothDataUpdate
+/// - Returns monitorView: onModeChangeAction
+/// - Returns monitorView: connected
+public func ScoscheDeviceConnect(monitor: ScoscheMonitor, monitorView: SchoscheViewController)
+
+
+/// Update Loop
+public var onBluetoothDataUpdate: ((_: CBUUID) -> Void)?
+    
+/// When a Mode is changed by the User
+public var onModeChangeAction: ((_:CharacteristicScoscheRhythm24SportMode.SportModeType) -> Void)?
+    
+/// When a Mode is changed by the BLE Service
+public var onModeAutoChangeAction: ((_:CharacteristicScoscheRhythm24SportMode.SportModeType) -> Void)?
+
+
+/// ScoscheDeviceReset: Removes shared resources attached to Central Manager
+public func ScoscheDeviceReset()
+
+/// ScoscheDeviceUpdateInfo: Sends data to device listed as monitor
+///
+/// - Parameter monitor: ScoscheMonitor
+/// - Parameter userInfo: ScoscheUserInfo
+///
+/// - SeeAlso: `ScoscheUserInfo()`
+public func ScoscheDeviceUpdateInfo(monitor: ScoscheMonitor, userInfo: ScoscheUserInfo)
+
+/// ScoscheDeviceScan: Starts scanning BLE for known UUIDs for Scosche Devices. Returns results of scan as list of monitors.
+///
+/// - Parameter monitorView:  SchoscheViewController
+/// - Returns monitor: Starts scanning procedure
+/// - Returns monitorView: reloadTableData()
+public func ScoscheDeviceScan(monitorView: SchoscheViewController)
+
+/// ScoscheDeviceStopScan: Removes shared resources attached to Central Manager
+public func ScoscheDeviceStopScan(monitorView: SchoscheViewController)
+
+/// removeBluetoothObservers: Removes shared resources attached to SchoscheViewController
+public func removeBluetoothObservers(monitorView: SchoscheViewController)
+
+/// setupBluetoothObservers: Attaches shared resources to SchoscheViewController
+public func setupBluetoothObservers(monitorView: SchoscheViewController)
+
+/// ScoscheGetAgeInMonths: Age is stored in Scosche devices as months. This funcion transforms Date of Birth to months.
+///
+/// - Parameter date: String `MM/dd/yyyy`
+///
+/// - Returns Int: Number of months
+public func ScoscheGetAgeInMonths(date: String) -> Int 
+
+/// ScoscheUserInfoRead: Used to return a ScoscheUserInfo object from UserDefaults storage or create a new object with defaults.
+///
+/// - Returns ScoscheUserInfo
+public func ScoscheUserInfoRead() -> ScoscheUserInfo
+
+/// ScoscheUserInfoWrite: Used to store ScoscheUserInfo in UserDefaults.
+///
+/// - Parameter userInfo: ScoscheUserInfo
+public func ScoscheUserInfoWrite(userInfo: ScoscheUserInfo)
+
+
+
+```
