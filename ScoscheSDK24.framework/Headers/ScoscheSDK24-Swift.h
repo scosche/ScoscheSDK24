@@ -211,8 +211,6 @@ SWIFT_CLASS("_TtC12ScoscheSDK2422SchoscheViewController")
 @end
 
 
-
-
 SWIFT_CLASS("_TtC12ScoscheSDK2414ScoscheMonitor")
 @interface ScoscheMonitor : NSObject
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
