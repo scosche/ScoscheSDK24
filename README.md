@@ -242,6 +242,17 @@ public func ScoscheUserInfoRead() -> ScoscheUserInfo
 /// - Parameter userInfo: ScoscheUserInfo
 public func ScoscheUserInfoWrite(userInfo: ScoscheUserInfo)
 
+/// ScoscheDownloadFitFile: Used to download FIT files from sensor.
+///
+/// - Parameter fitMetaData: FitFileMetaData
+/// - Parameter fileName: String
+/// - Parameter label: UILabel
+///
+/// Callback
+/// - Parameter result: Bool
+/// FIT files are downloaded to Documents folder. A label is provided to show download percentage, and messages.
+public func ScoscheDownloadFitFile(fitMetaData: FitFileMetaData, fileName: String, label: UILabel, completion: @escaping (_ result: Bool)->())
+
 
 
 ```
