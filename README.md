@@ -59,7 +59,7 @@ public var sportMode: SportModeType
 /// Heart Rate 0-250
 public var heartRate: Int
     
-/// Reseting Heart Rate
+/// Resting Heart Rate
 public var restingHeartRate: Double
 
 /// Is signal quality acceptable?
