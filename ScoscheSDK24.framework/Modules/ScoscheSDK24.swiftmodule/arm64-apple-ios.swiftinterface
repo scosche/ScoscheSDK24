@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.1.3 effective-4.2 (swiftlang-1100.0.282.1 clang-1100.0.33.15)
+// swift-compiler-version: Apple Swift version 5.3 effective-4.2 (swiftlang-1200.0.29.2 clang-1200.0.30.1)
 // swift-module-flags: -target arm64-apple-ios12.0 -enable-objc-interop -enable-library-evolution -swift-version 4.2 -enforce-exclusivity=checked -O -module-name ScoscheSDK24
 import BluetoothMessageProtocol
 import CoreBluetooth
@@ -27,8 +27,8 @@ open class ServiceScoscheRhythmPlusSerialData : BluetoothMessageProtocol.Service
     get
   }
   public init()
-  override public init(name: Swift.String, uuidString: Swift.String, uniformIdentifier: Swift.String)
   @objc deinit
+  override public init(name: Swift.String, uuidString: Swift.String, uniformIdentifier: Swift.String)
 }
 @available(swift 3.1)
 @available(iOS 10.0, tvOS 10.0, watchOS 3.0, OSX 10.12, *)
@@ -43,8 +43,8 @@ open class ServiceScoscheRhythmPlusData : BluetoothMessageProtocol.Service {
     get
   }
   public init()
-  override public init(name: Swift.String, uuidString: Swift.String, uniformIdentifier: Swift.String)
   @objc deinit
+  override public init(name: Swift.String, uuidString: Swift.String, uniformIdentifier: Swift.String)
 }
 @available(swift 3.1)
 @available(iOS 10.0, tvOS 10.0, watchOS 3.0, OSX 10.12, *)
@@ -59,8 +59,8 @@ open class ServiceScoscheRhythmPlusArmband : BluetoothMessageProtocol.Service {
     get
   }
   public init()
-  override public init(name: Swift.String, uuidString: Swift.String, uniformIdentifier: Swift.String)
   @objc deinit
+  override public init(name: Swift.String, uuidString: Swift.String, uniformIdentifier: Swift.String)
 }
 @available(swift 3.1)
 @available(iOS 10.0, tvOS 10.0, watchOS 3.0, OSX 10.12, *)
@@ -75,8 +75,8 @@ open class ServiceScoscheRhythm24ValencellFirmware : BluetoothMessageProtocol.Se
     get
   }
   public init()
-  override public init(name: Swift.String, uuidString: Swift.String, uniformIdentifier: Swift.String)
   @objc deinit
+  override public init(name: Swift.String, uuidString: Swift.String, uniformIdentifier: Swift.String)
 }
 @available(swift 3.1)
 @available(iOS 10.0, tvOS 10.0, watchOS 3.0, OSX 10.12, *)
@@ -91,8 +91,8 @@ open class ServiceScoscheRhythm24UserData : BluetoothMessageProtocol.Service {
     get
   }
   public init()
-  override public init(name: Swift.String, uuidString: Swift.String, uniformIdentifier: Swift.String)
   @objc deinit
+  override public init(name: Swift.String, uuidString: Swift.String, uniformIdentifier: Swift.String)
 }
 @available(swift 3.1)
 @available(iOS 10.0, tvOS 10.0, watchOS 3.0, OSX 10.12, *)
@@ -107,8 +107,8 @@ open class ServiceScoscheRhythm24FitFile : BluetoothMessageProtocol.Service {
     get
   }
   public init()
-  override public init(name: Swift.String, uuidString: Swift.String, uniformIdentifier: Swift.String)
   @objc deinit
+  override public init(name: Swift.String, uuidString: Swift.String, uniformIdentifier: Swift.String)
 }
 @available(swift 3.1)
 @available(iOS 10.0, tvOS 10.0, watchOS 3.0, OSX 10.12, *)
@@ -123,25 +123,30 @@ open class ServiceScoscheRhythm24ValencellEXData : BluetoothMessageProtocol.Serv
     get
   }
   public init()
-  override public init(name: Swift.String, uuidString: Swift.String, uniformIdentifier: Swift.String)
   @objc deinit
+  override public init(name: Swift.String, uuidString: Swift.String, uniformIdentifier: Swift.String)
 }
 @available(swift 3.1)
 @available(iOS 10.0, tvOS 10.0, watchOS 3.0, OSX 10.12, *)
-open class CharacteristicScoscheRhythmPlusTotalDistance : BluetoothMessageProtocol.Characteristic {
+final public class CharacteristicScoscheRhythmPlusTotalDistance : BluetoothMessageProtocol.Characteristic {
   public static var name: Swift.String {
     get
   }
   public static var uuidString: Swift.String {
     get
   }
-  public var totalDistance: Foundation.Measurement<Foundation.UnitLength> {
+  final public var name: Swift.String {
     get
-    }
+  }
+  final public var uuidString: Swift.String {
+    get
+  }
+  final public var totalDistance: Foundation.Measurement<Foundation.UnitLength> {
+    get
+  }
   public init(totalDistance: Swift.UInt16)
-  override open class func decode(data: Foundation.Data) throws -> ScoscheSDK24.CharacteristicScoscheRhythmPlusTotalDistance
-  override open func encode() throws -> Foundation.Data
-  override public init(name: Swift.String, uuidString: Swift.String)
+  final public class func decode<C>(with data: Foundation.Data) -> Swift.Result<C, BluetoothMessageProtocol.BluetoothDecodeError> where C : BluetoothMessageProtocol.Characteristic
+  final public func encode() -> Swift.Result<Foundation.Data, BluetoothMessageProtocol.BluetoothEncodeError>
   @objc deinit
 }
 @available(swift 3.1)
@@ -153,16 +158,21 @@ open class CharacteristicScoscheRhythmPlusThreeZone : BluetoothMessageProtocol.C
   public static var uuidString: Swift.String {
     get
   }
+  public var name: Swift.String {
+    get
+  }
+  public var uuidString: Swift.String {
+    get
+  }
   public var lightHeartRate: Foundation.Measurement<FitnessUnits.UnitCadence> {
     get
-    }
+  }
   public var moderateHeartRate: Foundation.Measurement<FitnessUnits.UnitCadence> {
     get
-    }
+  }
   public init(lightHeartRate: Swift.UInt8, moderateHeartRate: Swift.UInt8)
-  override open class func decode(data: Foundation.Data) throws -> ScoscheSDK24.CharacteristicScoscheRhythmPlusThreeZone
-  override open func encode() throws -> Foundation.Data
-  override public init(name: Swift.String, uuidString: Swift.String)
+  public class func decode<C>(with data: Foundation.Data) -> Swift.Result<C, BluetoothMessageProtocol.BluetoothDecodeError> where C : BluetoothMessageProtocol.Characteristic
+  public func encode() -> Swift.Result<Foundation.Data, BluetoothMessageProtocol.BluetoothEncodeError>
   @objc deinit
 }
 @available(swift 3.1)
@@ -174,13 +184,18 @@ open class CharacteristicScoscheRhythmPlusStepRateData : BluetoothMessageProtoco
   public static var uuidString: Swift.String {
     get
   }
+  public var name: Swift.String {
+    get
+  }
+  public var uuidString: Swift.String {
+    get
+  }
   public var stepRate: Foundation.Measurement<FitnessUnits.UnitCadence> {
     get
-    }
+  }
   public init(stepRate: Swift.UInt16)
-  override open class func decode(data: Foundation.Data) throws -> ScoscheSDK24.CharacteristicScoscheRhythmPlusStepRateData
-  override open func encode() throws -> Foundation.Data
-  override public init(name: Swift.String, uuidString: Swift.String)
+  public class func decode<C>(with data: Foundation.Data) -> Swift.Result<C, BluetoothMessageProtocol.BluetoothDecodeError> where C : BluetoothMessageProtocol.Characteristic
+  public func encode() -> Swift.Result<Foundation.Data, BluetoothMessageProtocol.BluetoothEncodeError>
   @objc deinit
 }
 @available(swift 3.1)
@@ -192,13 +207,18 @@ open class CharacteristicScoscheRhythmPlusSignalQuality : BluetoothMessageProtoc
   public static var uuidString: Swift.String {
     get
   }
+  public var name: Swift.String {
+    get
+  }
+  public var uuidString: Swift.String {
+    get
+  }
   public var quality: Swift.Bool {
     get
-    }
+  }
   public init(quality: Swift.Bool)
-  override open class func decode(data: Foundation.Data) throws -> ScoscheSDK24.CharacteristicScoscheRhythmPlusSignalQuality
-  override open func encode() throws -> Foundation.Data
-  override public init(name: Swift.String, uuidString: Swift.String)
+  public class func decode<C>(with data: Foundation.Data) -> Swift.Result<C, BluetoothMessageProtocol.BluetoothDecodeError> where C : BluetoothMessageProtocol.Characteristic
+  public func encode() -> Swift.Result<Foundation.Data, BluetoothMessageProtocol.BluetoothEncodeError>
   @objc deinit
 }
 @available(swift 3.1)
@@ -210,13 +230,18 @@ open class CharacteristicScoscheRhythmPlusSerialData : BluetoothMessageProtocol.
   public static var uuidString: Swift.String {
     get
   }
+  public var name: Swift.String {
+    get
+  }
+  public var uuidString: Swift.String {
+    get
+  }
   public var serialData: Foundation.Data {
     get
-    }
+  }
   public init(serialData: Foundation.Data)
-  override open class func decode(data: Foundation.Data) throws -> ScoscheSDK24.CharacteristicScoscheRhythmPlusSerialData
-  override open func encode() throws -> Foundation.Data
-  override public init(name: Swift.String, uuidString: Swift.String)
+  public class func decode<C>(with data: Foundation.Data) -> Swift.Result<C, BluetoothMessageProtocol.BluetoothDecodeError> where C : BluetoothMessageProtocol.Characteristic
+  public func encode() -> Swift.Result<Foundation.Data, BluetoothMessageProtocol.BluetoothEncodeError>
   @objc deinit
 }
 @available(swift 3.1)
@@ -228,13 +253,18 @@ open class CharacteristicScoscheRhythmPlusParametricData : BluetoothMessageProto
   public static var uuidString: Swift.String {
     get
   }
+  public var name: Swift.String {
+    get
+  }
+  public var uuidString: Swift.String {
+    get
+  }
   public var parametricData: Foundation.Data {
     get
-    }
+  }
   public init(parametricData: Foundation.Data)
-  override open class func decode(data: Foundation.Data) throws -> ScoscheSDK24.CharacteristicScoscheRhythmPlusParametricData
-  override open func encode() throws -> Foundation.Data
-  override public init(name: Swift.String, uuidString: Swift.String)
+  public class func decode<C>(with data: Foundation.Data) -> Swift.Result<C, BluetoothMessageProtocol.BluetoothDecodeError> where C : BluetoothMessageProtocol.Characteristic
+  public func encode() -> Swift.Result<Foundation.Data, BluetoothMessageProtocol.BluetoothEncodeError>
   @objc deinit
 }
 @available(swift 3.1)
@@ -246,13 +276,18 @@ open class CharacteristicScoscheRhythmPlusKiloCalories : BluetoothMessageProtoco
   public static var uuidString: Swift.String {
     get
   }
+  public var name: Swift.String {
+    get
+  }
+  public var uuidString: Swift.String {
+    get
+  }
   public var kiloCalories: Foundation.Measurement<Foundation.UnitEnergy> {
     get
-    }
+  }
   public init(kiloCalories: Swift.UInt16)
-  override open class func decode(data: Foundation.Data) throws -> ScoscheSDK24.CharacteristicScoscheRhythmPlusKiloCalories
-  override open func encode() throws -> Foundation.Data
-  override public init(name: Swift.String, uuidString: Swift.String)
+  public class func decode<C>(with data: Foundation.Data) -> Swift.Result<C, BluetoothMessageProtocol.BluetoothDecodeError> where C : BluetoothMessageProtocol.Characteristic
+  public func encode() -> Swift.Result<Foundation.Data, BluetoothMessageProtocol.BluetoothEncodeError>
   @objc deinit
 }
 @available(swift 3.1)
@@ -264,13 +299,18 @@ open class CharacteristicScoscheRhythmPlusHeartRateFilter : BluetoothMessageProt
   public static var uuidString: Swift.String {
     get
   }
+  public var name: Swift.String {
+    get
+  }
+  public var uuidString: Swift.String {
+    get
+  }
   public var heartRateFilterLength: Foundation.Measurement<Foundation.UnitDuration> {
     get
-    }
+  }
   public init(heartRateFilterLength: Swift.UInt8)
-  override open class func decode(data: Foundation.Data) throws -> ScoscheSDK24.CharacteristicScoscheRhythmPlusHeartRateFilter
-  override open func encode() throws -> Foundation.Data
-  override public init(name: Swift.String, uuidString: Swift.String)
+  public class func decode<C>(with data: Foundation.Data) -> Swift.Result<C, BluetoothMessageProtocol.BluetoothDecodeError> where C : BluetoothMessageProtocol.Characteristic
+  public func encode() -> Swift.Result<Foundation.Data, BluetoothMessageProtocol.BluetoothEncodeError>
   @objc deinit
 }
 @available(swift 3.1)
@@ -282,13 +322,18 @@ open class CharacteristicScoscheRhythmPlusBurnRate : BluetoothMessageProtocol.Ch
   public static var uuidString: Swift.String {
     get
   }
+  public var name: Swift.String {
+    get
+  }
+  public var uuidString: Swift.String {
+    get
+  }
   public var kiloCaloriesPerHour: Foundation.Measurement<Foundation.UnitEnergy> {
     get
-    }
+  }
   public init(kiloCaloriesPerHour: Swift.UInt16)
-  override open class func decode(data: Foundation.Data) throws -> ScoscheSDK24.CharacteristicScoscheRhythmPlusBurnRate
-  override open func encode() throws -> Foundation.Data
-  override public init(name: Swift.String, uuidString: Swift.String)
+  public class func decode<C>(with data: Foundation.Data) -> Swift.Result<C, BluetoothMessageProtocol.BluetoothDecodeError> where C : BluetoothMessageProtocol.Characteristic
+  public func encode() -> Swift.Result<Foundation.Data, BluetoothMessageProtocol.BluetoothEncodeError>
   @objc deinit
 }
 @available(swift 3.1)
@@ -298,6 +343,12 @@ open class CharacteristicScoscheRhythm24UserSettings : BluetoothMessageProtocol.
     get
   }
   public static var uuidString: Swift.String {
+    get
+  }
+  public var name: Swift.String {
+    get
+  }
+  public var uuidString: Swift.String {
     get
   }
   public enum GenderType : Swift.UInt8 {
@@ -311,23 +362,22 @@ open class CharacteristicScoscheRhythm24UserSettings : BluetoothMessageProtocol.
   }
   public var gender: ScoscheSDK24.CharacteristicScoscheRhythm24UserSettings.GenderType {
     get
-    }
+  }
   public var ageInMonths: Swift.UInt16 {
     get
-    }
+  }
   public var weight: Foundation.Measurement<Foundation.UnitMass> {
     get
-    }
+  }
   public var height: Foundation.Measurement<Foundation.UnitLength> {
     get
-    }
+  }
   public var restingHeartRate: Foundation.Measurement<FitnessUnits.UnitCadence> {
     get
-    }
+  }
   public init(gender: ScoscheSDK24.CharacteristicScoscheRhythm24UserSettings.GenderType, ageInMonths: Swift.UInt16, weight: Foundation.Measurement<Foundation.UnitMass>, height: Foundation.Measurement<Foundation.UnitLength>, restingHr: Swift.UInt8)
-  override open class func decode(data: Foundation.Data) throws -> ScoscheSDK24.CharacteristicScoscheRhythm24UserSettings
-  override open func encode() throws -> Foundation.Data
-  override public init(name: Swift.String, uuidString: Swift.String)
+  public class func decode<C>(with data: Foundation.Data) -> Swift.Result<C, BluetoothMessageProtocol.BluetoothDecodeError> where C : BluetoothMessageProtocol.Characteristic
+  public func encode() -> Swift.Result<Foundation.Data, BluetoothMessageProtocol.BluetoothEncodeError>
   @objc deinit
 }
 @available(swift 3.1)
@@ -337,6 +387,12 @@ open class CharacteristicScoscheRhythm24SportMode : BluetoothMessageProtocol.Cha
     get
   }
   public static var uuidString: Swift.String {
+    get
+  }
+  public var name: Swift.String {
+    get
+  }
+  public var uuidString: Swift.String {
     get
   }
   public enum SportModeType : Swift.UInt8 {
@@ -356,11 +412,10 @@ open class CharacteristicScoscheRhythm24SportMode : BluetoothMessageProtocol.Cha
   }
   public var mode: ScoscheSDK24.CharacteristicScoscheRhythm24SportMode.SportModeType {
     get
-    }
+  }
   public init(mode: ScoscheSDK24.CharacteristicScoscheRhythm24SportMode.SportModeType)
-  override open class func decode(data: Foundation.Data) throws -> ScoscheSDK24.CharacteristicScoscheRhythm24SportMode
-  override open func encode() throws -> Foundation.Data
-  override public init(name: Swift.String, uuidString: Swift.String)
+  public class func decode<C>(with data: Foundation.Data) -> Swift.Result<C, BluetoothMessageProtocol.BluetoothDecodeError> where C : BluetoothMessageProtocol.Characteristic
+  public func encode() -> Swift.Result<Foundation.Data, BluetoothMessageProtocol.BluetoothEncodeError>
   @objc deinit
 }
 @available(swift 3.1)
@@ -372,22 +427,27 @@ open class CharacteristicScoscheRhythm24FiveZoneHr : BluetoothMessageProtocol.Ch
   public static var uuidString: Swift.String {
     get
   }
+  public var name: Swift.String {
+    get
+  }
+  public var uuidString: Swift.String {
+    get
+  }
   public var lightHeartRate: Foundation.Measurement<FitnessUnits.UnitCadence> {
     get
-    }
+  }
   public var moderateHeartRate: Foundation.Measurement<FitnessUnits.UnitCadence> {
     get
-    }
+  }
   public var hardHeartRate: Foundation.Measurement<FitnessUnits.UnitCadence> {
     get
-    }
+  }
   public var maximumHeartRate: Foundation.Measurement<FitnessUnits.UnitCadence> {
     get
-    }
+  }
   public init(lightHeartRate: Swift.UInt8, moderateHeartRate: Swift.UInt8, hardHeartRate: Swift.UInt8, maximumHeartRate: Swift.UInt8)
-  override open class func decode(data: Foundation.Data) throws -> ScoscheSDK24.CharacteristicScoscheRhythm24FiveZoneHr
-  override open func encode() throws -> Foundation.Data
-  override public init(name: Swift.String, uuidString: Swift.String)
+  public class func decode<C>(with data: Foundation.Data) -> Swift.Result<C, BluetoothMessageProtocol.BluetoothDecodeError> where C : BluetoothMessageProtocol.Characteristic
+  public func encode() -> Swift.Result<Foundation.Data, BluetoothMessageProtocol.BluetoothEncodeError>
   @objc deinit
 }
 @available(swift 3.1)
@@ -397,6 +457,12 @@ open class CharacteristicScoscheRhythm24FitFileInfo : BluetoothMessageProtocol.C
     get
   }
   public static var uuidString: Swift.String {
+    get
+  }
+  public var name: Swift.String {
+    get
+  }
+  public var uuidString: Swift.String {
     get
   }
   public enum OpCode : Swift.UInt8 {
@@ -424,20 +490,19 @@ open class CharacteristicScoscheRhythm24FitFileInfo : BluetoothMessageProtocol.C
   }
   public var fileIndex: Swift.UInt16 {
     get
-    }
+  }
   public var opCode: ScoscheSDK24.CharacteristicScoscheRhythm24FitFileInfo.OpCode {
     get
-    }
+  }
   public var response: ScoscheSDK24.CharacteristicScoscheRhythm24FitFileInfo.FileResponse {
     get
-    }
+  }
   public var rawData: Foundation.Data {
     get
-    }
+  }
   public init(fileIndex: Swift.UInt16, opCode: ScoscheSDK24.CharacteristicScoscheRhythm24FitFileInfo.OpCode)
-  override open class func decode(data: Foundation.Data) throws -> ScoscheSDK24.CharacteristicScoscheRhythm24FitFileInfo
-  override open func encode() throws -> Foundation.Data
-  override public init(name: Swift.String, uuidString: Swift.String)
+  public class func decode<C>(with data: Foundation.Data) -> Swift.Result<C, BluetoothMessageProtocol.BluetoothDecodeError> where C : BluetoothMessageProtocol.Characteristic
+  public func encode() -> Swift.Result<Foundation.Data, BluetoothMessageProtocol.BluetoothEncodeError>
   @objc deinit
 }
 @available(swift 3.1)
@@ -449,16 +514,21 @@ open class CharacteristicScoscheRhythm24FitDirectory : BluetoothMessageProtocol.
   public static var uuidString: Swift.String {
     get
   }
+  public var name: Swift.String {
+    get
+  }
+  public var uuidString: Swift.String {
+    get
+  }
   public var header: ScoscheSDK24.FitDirectory {
     get
-    }
+  }
   public var numberOfFiles: Swift.UInt16 {
     get
-    }
+  }
   public init(header: ScoscheSDK24.FitDirectory, numberOfFiles: Swift.UInt16)
-  override open class func decode(data: Foundation.Data) throws -> ScoscheSDK24.CharacteristicScoscheRhythm24FitDirectory
-  override open func encode() throws -> Foundation.Data
-  override public init(name: Swift.String, uuidString: Swift.String)
+  public class func decode<C>(with data: Foundation.Data) -> Swift.Result<C, BluetoothMessageProtocol.BluetoothDecodeError> where C : BluetoothMessageProtocol.Characteristic
+  public func encode() -> Swift.Result<Foundation.Data, BluetoothMessageProtocol.BluetoothEncodeError>
   @objc deinit
 }
 @available(swift 3.1)
@@ -470,13 +540,18 @@ open class CharacteristicScoscheRhythmPlusValencellVDCSignalData : BluetoothMess
   public static var uuidString: Swift.String {
     get
   }
+  public var name: Swift.String {
+    get
+  }
+  public var uuidString: Swift.String {
+    get
+  }
   public var vdcSignalData: Swift.UInt16 {
     get
-    }
+  }
   public init(vdcSignalData: Swift.UInt16)
-  override open class func decode(data: Foundation.Data) throws -> ScoscheSDK24.CharacteristicScoscheRhythmPlusValencellVDCSignalData
-  override open func encode() throws -> Foundation.Data
-  override public init(name: Swift.String, uuidString: Swift.String)
+  public class func decode<C>(with data: Foundation.Data) -> Swift.Result<C, BluetoothMessageProtocol.BluetoothDecodeError> where C : BluetoothMessageProtocol.Characteristic
+  public func encode() -> Swift.Result<Foundation.Data, BluetoothMessageProtocol.BluetoothEncodeError>
   @objc deinit
 }
 @available(swift 3.1)
@@ -488,13 +563,18 @@ open class CharacteristicScoscheRhythmPlusValencellVDCOpticalData : BluetoothMes
   public static var uuidString: Swift.String {
     get
   }
+  public var name: Swift.String {
+    get
+  }
+  public var uuidString: Swift.String {
+    get
+  }
   public var vdcOpticalData: Swift.UInt16 {
     get
-    }
+  }
   public init(vdcOpticalData: Swift.UInt16)
-  override open class func decode(data: Foundation.Data) throws -> ScoscheSDK24.CharacteristicScoscheRhythmPlusValencellVDCOpticalData
-  override open func encode() throws -> Foundation.Data
-  override public init(name: Swift.String, uuidString: Swift.String)
+  public class func decode<C>(with data: Foundation.Data) -> Swift.Result<C, BluetoothMessageProtocol.BluetoothDecodeError> where C : BluetoothMessageProtocol.Characteristic
+  public func encode() -> Swift.Result<Foundation.Data, BluetoothMessageProtocol.BluetoothEncodeError>
   @objc deinit
 }
 @available(swift 3.1)
@@ -506,13 +586,18 @@ open class CharacteristicScoscheRhythmPlusValencellVDCActivityData : BluetoothMe
   public static var uuidString: Swift.String {
     get
   }
+  public var name: Swift.String {
+    get
+  }
+  public var uuidString: Swift.String {
+    get
+  }
   public var vdcActivityData: Swift.UInt16 {
     get
-    }
+  }
   public init(vdcActivityData: Swift.UInt16)
-  override open class func decode(data: Foundation.Data) throws -> ScoscheSDK24.CharacteristicScoscheRhythmPlusValencellVDCActivityData
-  override open func encode() throws -> Foundation.Data
-  override public init(name: Swift.String, uuidString: Swift.String)
+  public class func decode<C>(with data: Foundation.Data) -> Swift.Result<C, BluetoothMessageProtocol.BluetoothDecodeError> where C : BluetoothMessageProtocol.Characteristic
+  public func encode() -> Swift.Result<Foundation.Data, BluetoothMessageProtocol.BluetoothEncodeError>
   @objc deinit
 }
 @available(swift 3.1)
@@ -524,13 +609,18 @@ open class CharacteristicScoscheRhythmPlusValencellVDCHeartRateData : BluetoothM
   public static var uuidString: Swift.String {
     get
   }
+  public var name: Swift.String {
+    get
+  }
+  public var uuidString: Swift.String {
+    get
+  }
   public var vdcHeartRateData: Swift.UInt16 {
     get
-    }
+  }
   public init(vdcHeartRateData: Swift.UInt16)
-  override open class func decode(data: Foundation.Data) throws -> ScoscheSDK24.CharacteristicScoscheRhythmPlusValencellVDCHeartRateData
-  override open func encode() throws -> Foundation.Data
-  override public init(name: Swift.String, uuidString: Swift.String)
+  public class func decode<C>(with data: Foundation.Data) -> Swift.Result<C, BluetoothMessageProtocol.BluetoothDecodeError> where C : BluetoothMessageProtocol.Characteristic
+  public func encode() -> Swift.Result<Foundation.Data, BluetoothMessageProtocol.BluetoothEncodeError>
   @objc deinit
 }
 @available(swift 3.1)
@@ -542,13 +632,18 @@ open class CharacteristicScoscheRhythmPlusValencellVDCStepRateData : BluetoothMe
   public static var uuidString: Swift.String {
     get
   }
+  public var name: Swift.String {
+    get
+  }
+  public var uuidString: Swift.String {
+    get
+  }
   public var vdcStepRateData: Swift.UInt16 {
     get
-    }
+  }
   public init(vdcStepRateData: Swift.UInt16)
-  override open class func decode(data: Foundation.Data) throws -> ScoscheSDK24.CharacteristicScoscheRhythmPlusValencellVDCStepRateData
-  override open func encode() throws -> Foundation.Data
-  override public init(name: Swift.String, uuidString: Swift.String)
+  public class func decode<C>(with data: Foundation.Data) -> Swift.Result<C, BluetoothMessageProtocol.BluetoothDecodeError> where C : BluetoothMessageProtocol.Characteristic
+  public func encode() -> Swift.Result<Foundation.Data, BluetoothMessageProtocol.BluetoothEncodeError>
   @objc deinit
 }
 @available(swift 3.1)
@@ -560,13 +655,18 @@ open class CharacteristicScoscheRhythmPlusValencellVDCStrideRateData : Bluetooth
   public static var uuidString: Swift.String {
     get
   }
+  public var name: Swift.String {
+    get
+  }
+  public var uuidString: Swift.String {
+    get
+  }
   public var vdcStrideRateData: Swift.UInt16 {
     get
-    }
+  }
   public init(vdcStrideRateData: Swift.UInt16)
-  override open class func decode(data: Foundation.Data) throws -> ScoscheSDK24.CharacteristicScoscheRhythmPlusValencellVDCStrideRateData
-  override open func encode() throws -> Foundation.Data
-  override public init(name: Swift.String, uuidString: Swift.String)
+  public class func decode<C>(with data: Foundation.Data) -> Swift.Result<C, BluetoothMessageProtocol.BluetoothDecodeError> where C : BluetoothMessageProtocol.Characteristic
+  public func encode() -> Swift.Result<Foundation.Data, BluetoothMessageProtocol.BluetoothEncodeError>
   @objc deinit
 }
 @available(swift 3.1)
@@ -578,13 +678,18 @@ open class CharacteristicScoscheRhythmPlusValencellVDCDistanceData : BluetoothMe
   public static var uuidString: Swift.String {
     get
   }
+  public var name: Swift.String {
+    get
+  }
+  public var uuidString: Swift.String {
+    get
+  }
   public var vdcDistanceData: Swift.UInt16 {
     get
-    }
+  }
   public init(vdcDistanceData: Swift.UInt16)
-  override open class func decode(data: Foundation.Data) throws -> ScoscheSDK24.CharacteristicScoscheRhythmPlusValencellVDCDistanceData
-  override open func encode() throws -> Foundation.Data
-  override public init(name: Swift.String, uuidString: Swift.String)
+  public class func decode<C>(with data: Foundation.Data) -> Swift.Result<C, BluetoothMessageProtocol.BluetoothDecodeError> where C : BluetoothMessageProtocol.Characteristic
+  public func encode() -> Swift.Result<Foundation.Data, BluetoothMessageProtocol.BluetoothEncodeError>
   @objc deinit
 }
 @available(swift 3.1)
@@ -596,13 +701,18 @@ open class CharacteristicScoscheRhythmPlusValencellVDCSpeedData : BluetoothMessa
   public static var uuidString: Swift.String {
     get
   }
+  public var name: Swift.String {
+    get
+  }
+  public var uuidString: Swift.String {
+    get
+  }
   public var vdcSpeedData: Swift.UInt16 {
     get
-    }
+  }
   public init(vdcSpeedData: Swift.UInt16)
-  override open class func decode(data: Foundation.Data) throws -> ScoscheSDK24.CharacteristicScoscheRhythmPlusValencellVDCSpeedData
-  override open func encode() throws -> Foundation.Data
-  override public init(name: Swift.String, uuidString: Swift.String)
+  public class func decode<C>(with data: Foundation.Data) -> Swift.Result<C, BluetoothMessageProtocol.BluetoothDecodeError> where C : BluetoothMessageProtocol.Characteristic
+  public func encode() -> Swift.Result<Foundation.Data, BluetoothMessageProtocol.BluetoothEncodeError>
   @objc deinit
 }
 @available(swift 3.1)
@@ -614,13 +724,18 @@ open class CharacteristicScoscheRhythmPlusValencellVDCStepsData : BluetoothMessa
   public static var uuidString: Swift.String {
     get
   }
+  public var name: Swift.String {
+    get
+  }
+  public var uuidString: Swift.String {
+    get
+  }
   public var vdcStepsData: Swift.UInt16 {
     get
-    }
+  }
   public init(vdcStepsData: Swift.UInt16)
-  override open class func decode(data: Foundation.Data) throws -> ScoscheSDK24.CharacteristicScoscheRhythmPlusValencellVDCStepsData
-  override open func encode() throws -> Foundation.Data
-  override public init(name: Swift.String, uuidString: Swift.String)
+  public class func decode<C>(with data: Foundation.Data) -> Swift.Result<C, BluetoothMessageProtocol.BluetoothDecodeError> where C : BluetoothMessageProtocol.Characteristic
+  public func encode() -> Swift.Result<Foundation.Data, BluetoothMessageProtocol.BluetoothEncodeError>
   @objc deinit
 }
 @available(swift 3.1)
@@ -632,13 +747,18 @@ open class CharacteristicScoscheRhythmPlusValencellVDCCalorieRateData : Bluetoot
   public static var uuidString: Swift.String {
     get
   }
+  public var name: Swift.String {
+    get
+  }
+  public var uuidString: Swift.String {
+    get
+  }
   public var vdcCalorieRateData: Swift.UInt16 {
     get
-    }
+  }
   public init(vdcCalorieRateData: Swift.UInt16)
-  override open class func decode(data: Foundation.Data) throws -> ScoscheSDK24.CharacteristicScoscheRhythmPlusValencellVDCCalorieRateData
-  override open func encode() throws -> Foundation.Data
-  override public init(name: Swift.String, uuidString: Swift.String)
+  public class func decode<C>(with data: Foundation.Data) -> Swift.Result<C, BluetoothMessageProtocol.BluetoothDecodeError> where C : BluetoothMessageProtocol.Characteristic
+  public func encode() -> Swift.Result<Foundation.Data, BluetoothMessageProtocol.BluetoothEncodeError>
   @objc deinit
 }
 @available(swift 3.1)
@@ -650,13 +770,18 @@ open class CharacteristicScoscheRhythmPlusValencellVDCTotalCaloriesData : Blueto
   public static var uuidString: Swift.String {
     get
   }
+  public var name: Swift.String {
+    get
+  }
+  public var uuidString: Swift.String {
+    get
+  }
   public var vdcTotalCaloriesData: Swift.UInt16 {
     get
-    }
+  }
   public init(vdcTotalCaloriesData: Swift.UInt16)
-  override open class func decode(data: Foundation.Data) throws -> ScoscheSDK24.CharacteristicScoscheRhythmPlusValencellVDCTotalCaloriesData
-  override open func encode() throws -> Foundation.Data
-  override public init(name: Swift.String, uuidString: Swift.String)
+  public class func decode<C>(with data: Foundation.Data) -> Swift.Result<C, BluetoothMessageProtocol.BluetoothDecodeError> where C : BluetoothMessageProtocol.Characteristic
+  public func encode() -> Swift.Result<Foundation.Data, BluetoothMessageProtocol.BluetoothEncodeError>
   @objc deinit
 }
 @available(swift 3.1)
@@ -668,13 +793,18 @@ open class CharacteristicScoscheRhythmPlusValencellVDCAmbientLightData : Bluetoo
   public static var uuidString: Swift.String {
     get
   }
+  public var name: Swift.String {
+    get
+  }
+  public var uuidString: Swift.String {
+    get
+  }
   public var vdcAmbientLightData: Swift.UInt16 {
     get
-    }
+  }
   public init(vdcAmbientLightData: Swift.UInt16)
-  override open class func decode(data: Foundation.Data) throws -> ScoscheSDK24.CharacteristicScoscheRhythmPlusValencellVDCAmbientLightData
-  override open func encode() throws -> Foundation.Data
-  override public init(name: Swift.String, uuidString: Swift.String)
+  public class func decode<C>(with data: Foundation.Data) -> Swift.Result<C, BluetoothMessageProtocol.BluetoothDecodeError> where C : BluetoothMessageProtocol.Characteristic
+  public func encode() -> Swift.Result<Foundation.Data, BluetoothMessageProtocol.BluetoothEncodeError>
   @objc deinit
 }
 @available(swift 3.1)
@@ -686,13 +816,18 @@ open class CharacteristicScoscheRhythmPlusValencellVDCACSignalData : BluetoothMe
   public static var uuidString: Swift.String {
     get
   }
+  public var name: Swift.String {
+    get
+  }
+  public var uuidString: Swift.String {
+    get
+  }
   public var vdcACSignalData: Swift.UInt16 {
     get
-    }
+  }
   public init(vdcACSignalData: Swift.UInt16)
-  override open class func decode(data: Foundation.Data) throws -> ScoscheSDK24.CharacteristicScoscheRhythmPlusValencellVDCACSignalData
-  override open func encode() throws -> Foundation.Data
-  override public init(name: Swift.String, uuidString: Swift.String)
+  public class func decode<C>(with data: Foundation.Data) -> Swift.Result<C, BluetoothMessageProtocol.BluetoothDecodeError> where C : BluetoothMessageProtocol.Characteristic
+  public func encode() -> Swift.Result<Foundation.Data, BluetoothMessageProtocol.BluetoothEncodeError>
   @objc deinit
 }
 @available(swift 3.1)
@@ -704,13 +839,18 @@ open class CharacteristicScoscheRhythmPlusValencellVDCRRIStatusData : BluetoothM
   public static var uuidString: Swift.String {
     get
   }
+  public var name: Swift.String {
+    get
+  }
+  public var uuidString: Swift.String {
+    get
+  }
   public var vdcRRIStatusData: Swift.UInt16 {
     get
-    }
+  }
   public init(vdcRRIStatusData: Swift.UInt16)
-  override open class func decode(data: Foundation.Data) throws -> ScoscheSDK24.CharacteristicScoscheRhythmPlusValencellVDCRRIStatusData
-  override open func encode() throws -> Foundation.Data
-  override public init(name: Swift.String, uuidString: Swift.String)
+  public class func decode<C>(with data: Foundation.Data) -> Swift.Result<C, BluetoothMessageProtocol.BluetoothDecodeError> where C : BluetoothMessageProtocol.Characteristic
+  public func encode() -> Swift.Result<Foundation.Data, BluetoothMessageProtocol.BluetoothEncodeError>
   @objc deinit
 }
 @available(swift 3.1)
@@ -722,13 +862,18 @@ open class CharacteristicScoscheRhythmPlusValencellVDCRRITimestampData : Bluetoo
   public static var uuidString: Swift.String {
     get
   }
+  public var name: Swift.String {
+    get
+  }
+  public var uuidString: Swift.String {
+    get
+  }
   public var vdcRRITimestampData: Swift.UInt16 {
     get
-    }
+  }
   public init(vdcRRITimestampData: Swift.UInt16)
-  override open class func decode(data: Foundation.Data) throws -> ScoscheSDK24.CharacteristicScoscheRhythmPlusValencellVDCRRITimestampData
-  override open func encode() throws -> Foundation.Data
-  override public init(name: Swift.String, uuidString: Swift.String)
+  public class func decode<C>(with data: Foundation.Data) -> Swift.Result<C, BluetoothMessageProtocol.BluetoothDecodeError> where C : BluetoothMessageProtocol.Characteristic
+  public func encode() -> Swift.Result<Foundation.Data, BluetoothMessageProtocol.BluetoothEncodeError>
   @objc deinit
 }
 @available(swift 3.1)
@@ -740,13 +885,18 @@ open class CharacteristicScoscheRhythmPlusValencellVDCRRIDataRegister1Data : Blu
   public static var uuidString: Swift.String {
     get
   }
+  public var name: Swift.String {
+    get
+  }
+  public var uuidString: Swift.String {
+    get
+  }
   public var vdcRRIDataRegister1Data: Swift.UInt16 {
     get
-    }
+  }
   public init(vdcRRIDataRegister1Data: Swift.UInt16)
-  override open class func decode(data: Foundation.Data) throws -> ScoscheSDK24.CharacteristicScoscheRhythmPlusValencellVDCRRIDataRegister1Data
-  override open func encode() throws -> Foundation.Data
-  override public init(name: Swift.String, uuidString: Swift.String)
+  public class func decode<C>(with data: Foundation.Data) -> Swift.Result<C, BluetoothMessageProtocol.BluetoothDecodeError> where C : BluetoothMessageProtocol.Characteristic
+  public func encode() -> Swift.Result<Foundation.Data, BluetoothMessageProtocol.BluetoothEncodeError>
   @objc deinit
 }
 @available(swift 3.1)
@@ -758,13 +908,18 @@ open class CharacteristicScoscheRhythmPlusValencellVDCRRIDataRegister2Data : Blu
   public static var uuidString: Swift.String {
     get
   }
+  public var name: Swift.String {
+    get
+  }
+  public var uuidString: Swift.String {
+    get
+  }
   public var vdcRRIDataRegister2Data: Swift.UInt16 {
     get
-    }
+  }
   public init(vdcRRIDataRegister2Data: Swift.UInt16)
-  override open class func decode(data: Foundation.Data) throws -> ScoscheSDK24.CharacteristicScoscheRhythmPlusValencellVDCRRIDataRegister2Data
-  override open func encode() throws -> Foundation.Data
-  override public init(name: Swift.String, uuidString: Swift.String)
+  public class func decode<C>(with data: Foundation.Data) -> Swift.Result<C, BluetoothMessageProtocol.BluetoothDecodeError> where C : BluetoothMessageProtocol.Characteristic
+  public func encode() -> Swift.Result<Foundation.Data, BluetoothMessageProtocol.BluetoothEncodeError>
   @objc deinit
 }
 @available(swift 3.1)
@@ -776,13 +931,18 @@ open class CharacteristicScoscheRhythmPlusValencellVDCRRIDataRegister3Data : Blu
   public static var uuidString: Swift.String {
     get
   }
+  public var name: Swift.String {
+    get
+  }
+  public var uuidString: Swift.String {
+    get
+  }
   public var vdcRRIDataRegister3Data: Swift.UInt16 {
     get
-    }
+  }
   public init(vdcRRIDataRegister3Data: Swift.UInt16)
-  override open class func decode(data: Foundation.Data) throws -> ScoscheSDK24.CharacteristicScoscheRhythmPlusValencellVDCRRIDataRegister3Data
-  override open func encode() throws -> Foundation.Data
-  override public init(name: Swift.String, uuidString: Swift.String)
+  public class func decode<C>(with data: Foundation.Data) -> Swift.Result<C, BluetoothMessageProtocol.BluetoothDecodeError> where C : BluetoothMessageProtocol.Characteristic
+  public func encode() -> Swift.Result<Foundation.Data, BluetoothMessageProtocol.BluetoothEncodeError>
   @objc deinit
 }
 @available(swift 3.1)
@@ -794,13 +954,18 @@ open class CharacteristicScoscheRhythmPlusValencellVDCRRIDataRegister4Data : Blu
   public static var uuidString: Swift.String {
     get
   }
+  public var name: Swift.String {
+    get
+  }
+  public var uuidString: Swift.String {
+    get
+  }
   public var vdcRRIDataRegister4Data: Swift.UInt16 {
     get
-    }
+  }
   public init(vdcRRIDataRegister4Data: Swift.UInt16)
-  override open class func decode(data: Foundation.Data) throws -> ScoscheSDK24.CharacteristicScoscheRhythmPlusValencellVDCRRIDataRegister4Data
-  override open func encode() throws -> Foundation.Data
-  override public init(name: Swift.String, uuidString: Swift.String)
+  public class func decode<C>(with data: Foundation.Data) -> Swift.Result<C, BluetoothMessageProtocol.BluetoothDecodeError> where C : BluetoothMessageProtocol.Characteristic
+  public func encode() -> Swift.Result<Foundation.Data, BluetoothMessageProtocol.BluetoothEncodeError>
   @objc deinit
 }
 @available(swift 3.1)
@@ -812,16 +977,21 @@ open class CharacteristicScoscheRhythmPlusValencellVDCRRIDataRegister5Data : Blu
   public static var uuidString: Swift.String {
     get
   }
+  public var name: Swift.String {
+    get
+  }
+  public var uuidString: Swift.String {
+    get
+  }
   public var vdcRRIDataRegister5Data: Swift.UInt16 {
     get
-    }
+  }
   public init(vdcRRIDataRegister5Data: Swift.UInt16)
-  override open class func decode(data: Foundation.Data) throws -> ScoscheSDK24.CharacteristicScoscheRhythmPlusValencellVDCRRIDataRegister5Data
-  override open func encode() throws -> Foundation.Data
-  override public init(name: Swift.String, uuidString: Swift.String)
+  public class func decode<C>(with data: Foundation.Data) -> Swift.Result<C, BluetoothMessageProtocol.BluetoothDecodeError> where C : BluetoothMessageProtocol.Characteristic
+  public func encode() -> Swift.Result<Foundation.Data, BluetoothMessageProtocol.BluetoothEncodeError>
   @objc deinit
 }
-final public class UserConfig {
+@_hasMissingDesignatedInitializers final public class UserConfig {
   public static let sharedConfig: ScoscheSDK24.UserConfig
   public struct Constant {
     public struct Weight {
@@ -1038,7 +1208,7 @@ extension Double {
     get
   }
 }
-final public class SystemState {
+@_hasMissingDesignatedInitializers final public class SystemState {
   final public let rhythmPlusFrimwareVersion: Swift.String
   final public let rhythm24FrimwareVersion: Swift.String
   public static let sharedState: ScoscheSDK24.SystemState
@@ -1125,25 +1295,25 @@ public struct FitFileMetaData {
   }
   public var fileIndex: Swift.UInt16 {
     get
-    }
+  }
   public var fileNumber: Swift.UInt16 {
     get
-    }
+  }
   public var fileSubType: ScoscheSDK24.FitFileMetaData.FileType {
     get
-    }
+  }
   public var filePermissions: ScoscheSDK24.FitFileMetaData.FileFlags {
     get
-    }
+  }
   public var modificationDate: Foundation.Date? {
     get
-    }
+  }
   public var fileSizeInBytes: Swift.UInt32 {
     get
-    }
+  }
   public var isFitFile: Swift.Bool {
     get
-    }
+  }
 }
 extension FitFileMetaData {
   public static func == (lhs: ScoscheSDK24.FitFileMetaData, rhs: ScoscheSDK24.FitFileMetaData) -> Swift.Bool
@@ -1161,21 +1331,21 @@ public struct FitDirectory {
   }
   public var version: Swift.UInt8 {
     get
-    }
+  }
   public var timeFormat: ScoscheSDK24.FitDirectory.TimeFormat {
     get
-    }
+  }
   public var currentSystemTime: Foundation.Date? {
     get
-    }
+  }
   public var lastModificationDate: Foundation.Date? {
     get
-    }
+  }
 }
 public struct FirmwareBundle {
   public var version: Swift.String {
     get
-    }
+  }
 }
 public let IOS11: Swift.Bool
 public let IOS10: Swift.Bool
@@ -1187,7 +1357,7 @@ public let IPAD: Swift.Bool
 public let IPHONE: Swift.Bool
 public let isLandscape: Swift.Bool
 public let isPortrait: Swift.Bool
-public class Diagnostics {
+@_hasMissingDesignatedInitializers public class Diagnostics {
   public class var isSimulator: Swift.Bool {
     get
   }
@@ -1235,7 +1405,7 @@ extension Date {
     get
   }
 }
-@objc open class SchoscheViewController : UIKit.UIViewController {
+@objc @_inheritsConvenienceInitializers open class SchoscheViewController : UIKit.UIViewController {
   public var scanningStarted: Swift.Bool
   public var discoveredMonitors: [ScoscheSDK24.ScoscheMonitor]
   public var monitor: ScoscheSDK24.ScoscheMonitor!
@@ -1270,9 +1440,9 @@ extension Date {
   public var vdcRRIDataRegister4: Swift.Int
   public var vdcRRIDataRegister5: Swift.Int
   open func reloadTableData()
+  @objc deinit
   @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
   @objc required dynamic public init?(coder: Foundation.NSCoder)
-  @objc deinit
 }
 public func ScoscheDeviceConnect(monitor: ScoscheSDK24.ScoscheMonitor, monitorView: ScoscheSDK24.SchoscheViewController)
 public func ScoscheDeviceReset()
@@ -1574,8 +1744,10 @@ extension ScoscheSDK24.HeartRateZone : Swift.Hashable {}
 extension ScoscheSDK24.FitFileMetaData.FileType : Swift.Equatable {}
 extension ScoscheSDK24.FitFileMetaData.FileType : Swift.Hashable {}
 extension ScoscheSDK24.FitFileMetaData.FileType : Swift.RawRepresentable {}
+extension ScoscheSDK24.FitDirectory.TimeFormat : Swift.Equatable {}
 extension ScoscheSDK24.FitDirectory.TimeFormat : Swift.Hashable {}
 extension ScoscheSDK24.FitDirectory.TimeFormat : Swift.RawRepresentable {}
+extension ScoscheSDK24.MonitorType : Swift.Equatable {}
 extension ScoscheSDK24.MonitorType : Swift.Hashable {}
 extension ScoscheSDK24.MonitorType : Swift.RawRepresentable {}
 extension ScoscheSDK24.ScoscheMonitor.FITDownloadResponse : Swift.Equatable {}
