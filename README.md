@@ -12,9 +12,9 @@ Great for use with smartphones, tablets, smart and sport watches, exercise equip
 This repositorty contains the ScoscheSDK24 Framework. This framework may be used to integrate Scosche Rhythm 24 and Rhythm+ activity sensor data into iOS apps.
 
 ### Build dependancies
-* Xcode 10.1 and above
+* Xcode 12.1 and above
 * Cocoapods 1.0 and above
-* Physical iOS 11.0 & above device with Bluetooth to test (Note: Simulator does not have a BLE radio, and can not be used to test communication)
+* Physical iOS 12.0 & above device with Bluetooth to test (Note: Simulator does not have a BLE radio, and can not be used to test communication)
 * Scosche Rhythm+ or Rhythm 24 sensor
 
 
@@ -26,10 +26,6 @@ target 'YourAppNameHere' do
   use_frameworks!
 
   pod 'ScoscheSDK24', :git => 'https://github.com/scosche/ScoscheSDK24.git'
-  pod 'BluetoothMessageProtocol', '0.18.0'
-  pod 'DataDecoder', '4.3'
-  pod 'GBVersionTracking'
-
 end
 
 post_install do |installer|
@@ -61,6 +57,9 @@ public var heartRate: Int
     
 /// Resting Heart Rate
 public var restingHeartRate: Double
+
+/// RR Interval
+public var RRInterval: Double
 
 /// Is signal quality acceptable?
 public var signalQuality: Bool

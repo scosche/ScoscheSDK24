@@ -2,11 +2,11 @@
 //  ScoscheSDK24.h
 //  ScoscheSDK24
 //
-//  Created by Steffin Fox Griswold on 7/11/19.
-//  Copyright © 2019 NPE INC. All rights reserved.
+//  Created by Steffin Fox Griswold on 11/20/20.
+//  Copyright © 2020 NPE INC. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
 
 //! Project version number for ScoscheSDK24.
 FOUNDATION_EXPORT double ScoscheSDK24VersionNumber;
