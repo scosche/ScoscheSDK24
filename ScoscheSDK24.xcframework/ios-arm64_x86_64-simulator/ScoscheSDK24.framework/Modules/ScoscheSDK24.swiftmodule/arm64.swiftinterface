@@ -1,0 +1,1565 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.5.2 (swiftlang-1300.0.47.5 clang-1300.0.29.30)
+// swift-module-flags: -target arm64-apple-ios12.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name ScoscheSDK24
+import CoreBluetooth
+import Dispatch
+import Foundation
+@_exported import ScoscheSDK24
+import Swift
+import UIKit
+import UserNotifications
+import _Concurrency
+public class CharacteristicScoscheRhythmPlusTotalDistance : Any {
+  public static var name: Swift.String {
+    get
+  }
+  public static var uuidString: Swift.String {
+    get
+  }
+  public var name: Swift.String {
+    get
+  }
+  public var uuidString: Swift.String {
+    get
+  }
+  public var totalDistance: Swift.UInt16 {
+    get
+  }
+  public init(totalDistance: Swift.UInt16)
+  public class func decode<C>(with data: Foundation.Data) -> Swift.Result<C, Swift.Error>
+  public func encode() -> Swift.Result<Foundation.Data, Swift.Error>
+  @objc deinit
+}
+@available(swift 3.1)
+@available(iOS 10.0, tvOS 10.0, watchOS 3.0, macOS 10.12, *)
+open class CharacteristicScoscheRhythmPlusThreeZone : Any {
+  public static var name: Swift.String {
+    get
+  }
+  public static var uuidString: Swift.String {
+    get
+  }
+  public var name: Swift.String {
+    get
+  }
+  public var uuidString: Swift.String {
+    get
+  }
+  public var lightHeartRate: Swift.UInt8 {
+    get
+  }
+  public var moderateHeartRate: Swift.UInt8 {
+    get
+  }
+  public init(lightHeartRate: Swift.UInt8, moderateHeartRate: Swift.UInt8)
+  public class func decode<C>(with data: Foundation.Data) -> Swift.Result<C, Swift.Error>
+  public func encode() -> Swift.Result<Foundation.Data, Swift.Error>
+  @objc deinit
+}
+@available(swift 3.1)
+@available(iOS 10.0, tvOS 10.0, watchOS 3.0, macOS 10.12, *)
+open class CharacteristicScoscheRhythmPlusStepRateData : Any {
+  public static var name: Swift.String {
+    get
+  }
+  public static var uuidString: Swift.String {
+    get
+  }
+  public var name: Swift.String {
+    get
+  }
+  public var uuidString: Swift.String {
+    get
+  }
+  public var stepRate: Swift.UInt16 {
+    get
+  }
+  public init(stepRate: Swift.UInt16)
+  public class func decode<C>(with data: Foundation.Data) -> Swift.Result<C, Swift.Error>
+  public func encode() -> Swift.Result<Foundation.Data, Swift.Error>
+  @objc deinit
+}
+@available(swift 3.1)
+@available(iOS 10.0, tvOS 10.0, watchOS 3.0, macOS 10.12, *)
+open class CharacteristicScoscheRhythmPlusSignalQuality : Any {
+  public static var name: Swift.String {
+    get
+  }
+  public static var uuidString: Swift.String {
+    get
+  }
+  public var name: Swift.String {
+    get
+  }
+  public var uuidString: Swift.String {
+    get
+  }
+  public var quality: Swift.Bool {
+    get
+  }
+  public init(quality: Swift.Bool)
+  public class func decode<C>(with data: Foundation.Data) -> Swift.Result<C, Swift.Error>
+  public func encode() -> Swift.Result<Foundation.Data, Swift.Error>
+  @objc deinit
+}
+@available(swift 3.1)
+@available(iOS 10.0, tvOS 10.0, watchOS 3.0, macOS 10.12, *)
+open class CharacteristicScoscheRhythmPlusSerialData : Any {
+  public static var name: Swift.String {
+    get
+  }
+  public static var uuidString: Swift.String {
+    get
+  }
+  public var name: Swift.String {
+    get
+  }
+  public var uuidString: Swift.String {
+    get
+  }
+  public var serialData: Foundation.Data {
+    get
+  }
+  public init(serialData: Foundation.Data)
+  public class func decode<C>(with data: Foundation.Data) -> Swift.Result<C, Swift.Error>
+  public func encode() -> Swift.Result<Foundation.Data, Swift.Error>
+  @objc deinit
+}
+@available(swift 3.1)
+@available(iOS 10.0, tvOS 10.0, watchOS 3.0, macOS 10.12, *)
+open class CharacteristicScoscheRhythmPlusParametricData : Any {
+  public static var name: Swift.String {
+    get
+  }
+  public static var uuidString: Swift.String {
+    get
+  }
+  public var name: Swift.String {
+    get
+  }
+  public var uuidString: Swift.String {
+    get
+  }
+  public var parametricData: Foundation.Data {
+    get
+  }
+  public init(parametricData: Foundation.Data)
+  public class func decode<C>(with data: Foundation.Data) -> Swift.Result<C, Swift.Error>
+  public func encode() -> Swift.Result<Foundation.Data, Swift.Error>
+  @objc deinit
+}
+@available(swift 3.1)
+@available(iOS 10.0, tvOS 10.0, watchOS 3.0, macOS 10.12, *)
+open class CharacteristicScoscheRhythmPlusKiloCalories : Any {
+  public static var name: Swift.String {
+    get
+  }
+  public static var uuidString: Swift.String {
+    get
+  }
+  public var name: Swift.String {
+    get
+  }
+  public var uuidString: Swift.String {
+    get
+  }
+  public var kiloCalories: Swift.UInt16 {
+    get
+  }
+  public init(kiloCalories: Swift.UInt16)
+  public class func decode<C>(with data: Foundation.Data) -> Swift.Result<C, Swift.Error>
+  public func encode() -> Swift.Result<Foundation.Data, Swift.Error>
+  @objc deinit
+}
+@available(swift 3.1)
+@available(iOS 10.0, tvOS 10.0, watchOS 3.0, macOS 10.12, iOS 10.0, tvOS 10.0, watchOS 3.0, macOS 10.12, *)
+open class CharacteristicScoscheRhythmPlusBurnRate : Any {
+  public static var name: Swift.String {
+    get
+  }
+  public static var uuidString: Swift.String {
+    get
+  }
+  public var name: Swift.String {
+    get
+  }
+  public var uuidString: Swift.String {
+    get
+  }
+  public var kiloCaloriesPerHour: Swift.UInt16 {
+    get
+  }
+  public init(kiloCaloriesPerHour: Swift.UInt16)
+  public class func decode<C>(with data: Foundation.Data) -> Swift.Result<C, Swift.Error>
+  public func encode() -> Swift.Result<Foundation.Data, Swift.Error>
+  @objc deinit
+}
+@available(swift 3.1)
+@available(iOS 10.0, tvOS 10.0, watchOS 3.0, macOS 10.12, *)
+open class CharacteristicScoscheRhythm24UserSettings : Any {
+  public static var name: Swift.String {
+    get
+  }
+  public static var uuidString: Swift.String {
+    get
+  }
+  public var name: Swift.String {
+    get
+  }
+  public var uuidString: Swift.String {
+    get
+  }
+  public var gender: Swift.UInt8 {
+    get
+  }
+  public var ageInMonths: Swift.UInt16 {
+    get
+  }
+  public var weight: Swift.UInt16 {
+    get
+  }
+  public var height: Swift.UInt8 {
+    get
+  }
+  public var restingHeartRate: Swift.UInt8 {
+    get
+  }
+  public init(gender: Swift.UInt8, ageInMonths: Swift.UInt16, weight: Swift.UInt16, height: Swift.UInt8, restingHr: Swift.UInt8)
+  public class func decode<C>(with data: Foundation.Data) -> Swift.Result<C, Swift.Error>
+  public func encode() -> Swift.Result<Foundation.Data, Swift.Error>
+  @objc deinit
+}
+@available(swift 3.1)
+@available(iOS 10.0, tvOS 10.0, watchOS 3.0, macOS 10.12, *)
+open class CharacteristicScoscheRhythm24SportMode : Any {
+  public static var name: Swift.String {
+    get
+  }
+  public static var uuidString: Swift.String {
+    get
+  }
+  public var name: Swift.String {
+    get
+  }
+  public var uuidString: Swift.String {
+    get
+  }
+  public enum SportModeType : Swift.UInt8 {
+    case heartRate
+    case running
+    case cycling
+    case swimming
+    case duathlon
+    case triathlon
+    case hrv
+    case multiModeSperator
+    public init?(rawValue: Swift.UInt8)
+    public typealias RawValue = Swift.UInt8
+    public var rawValue: Swift.UInt8 {
+      get
+    }
+  }
+  public var mode: ScoscheSDK24.CharacteristicScoscheRhythm24SportMode.SportModeType {
+    get
+  }
+  public init(mode: ScoscheSDK24.CharacteristicScoscheRhythm24SportMode.SportModeType)
+  public class func decode<C>(with data: Foundation.Data) -> Swift.Result<C, Swift.Error>
+  public func encode() -> Swift.Result<Foundation.Data, Swift.Error>
+  @objc deinit
+}
+@available(swift 3.1)
+@available(iOS 10.0, tvOS 10.0, watchOS 3.0, macOS 10.12, *)
+open class CharacteristicScoscheRhythm24FiveZoneHr : Any {
+  public static var name: Swift.String {
+    get
+  }
+  public static var uuidString: Swift.String {
+    get
+  }
+  public var name: Swift.String {
+    get
+  }
+  public var uuidString: Swift.String {
+    get
+  }
+  public var lightHeartRate: Swift.UInt8 {
+    get
+  }
+  public var moderateHeartRate: Swift.UInt8 {
+    get
+  }
+  public var hardHeartRate: Swift.UInt8 {
+    get
+  }
+  public var maximumHeartRate: Swift.UInt8 {
+    get
+  }
+  public init(lightHeartRate: Swift.UInt8, moderateHeartRate: Swift.UInt8, hardHeartRate: Swift.UInt8, maximumHeartRate: Swift.UInt8)
+  public class func decode<C>(with data: Foundation.Data) -> Swift.Result<C, Swift.Error>
+  public func encode() -> Swift.Result<Foundation.Data, Swift.Error>
+  @objc deinit
+}
+@available(swift 3.1)
+@available(iOS 10.0, tvOS 10.0, watchOS 3.0, macOS 10.12, *)
+open class CharacteristicScoscheRhythm24FitFileInfo : Any {
+  public static var name: Swift.String {
+    get
+  }
+  public static var uuidString: Swift.String {
+    get
+  }
+  public var name: Swift.String {
+    get
+  }
+  public var uuidString: Swift.String {
+    get
+  }
+  public enum OpCode : Swift.UInt8 {
+    case readInfo
+    case eraseFile
+    case downloadFile
+    public init?(rawValue: Swift.UInt8)
+    public typealias RawValue = Swift.UInt8
+    public var rawValue: Swift.UInt8 {
+      get
+    }
+  }
+  public enum FileResponse : Swift.UInt8 {
+    case responseFail
+    case ok
+    case recordingInProgress
+    case downloadInProgress
+    case downloadFinished
+    case notused
+    public init?(rawValue: Swift.UInt8)
+    public typealias RawValue = Swift.UInt8
+    public var rawValue: Swift.UInt8 {
+      get
+    }
+  }
+  public var fileIndex: Swift.UInt16 {
+    get
+  }
+  public var opCode: ScoscheSDK24.CharacteristicScoscheRhythm24FitFileInfo.OpCode {
+    get
+  }
+  public var response: ScoscheSDK24.CharacteristicScoscheRhythm24FitFileInfo.FileResponse {
+    get
+  }
+  public var rawData: Foundation.Data {
+    get
+  }
+  public init(fileIndex: Swift.UInt16, opCode: ScoscheSDK24.CharacteristicScoscheRhythm24FitFileInfo.OpCode)
+  public class func decode<C>(with data: Foundation.Data) -> Swift.Result<C, Swift.Error>
+  public func encode() -> Swift.Result<Foundation.Data, Swift.Error>
+  @objc deinit
+}
+@available(swift 3.1)
+@available(iOS 10.0, tvOS 10.0, watchOS 3.0, macOS 10.12, *)
+open class CharacteristicScoscheRhythm24FitDirectory : Any {
+  public static var name: Swift.String {
+    get
+  }
+  public static var uuidString: Swift.String {
+    get
+  }
+  public var name: Swift.String {
+    get
+  }
+  public var uuidString: Swift.String {
+    get
+  }
+  public var header: ScoscheSDK24.FitDirectory {
+    get
+  }
+  public var numberOfFiles: Swift.UInt16 {
+    get
+  }
+  public init(header: ScoscheSDK24.FitDirectory, numberOfFiles: Swift.UInt16)
+  public class func decode<C>(with data: Foundation.Data) -> Swift.Result<C, Swift.Error>
+  public func encode() -> Swift.Result<Foundation.Data, Swift.Error>
+  @objc deinit
+}
+@available(swift 3.1)
+@available(iOS 10.0, tvOS 10.0, watchOS 3.0, macOS 10.12, *)
+open class CharacteristicScoscheRhythmPlusValencellVDCSignalData : Any {
+  public static var name: Swift.String {
+    get
+  }
+  public static var uuidString: Swift.String {
+    get
+  }
+  public var name: Swift.String {
+    get
+  }
+  public var uuidString: Swift.String {
+    get
+  }
+  public var vdcSignalData: Swift.UInt16 {
+    get
+  }
+  public init(vdcSignalData: Swift.UInt16)
+  public class func decode<C>(with data: Foundation.Data) -> Swift.Result<C, Swift.Error>
+  public func encode() -> Swift.Result<Foundation.Data, Swift.Error>
+  @objc deinit
+}
+@available(swift 3.1)
+@available(iOS 10.0, tvOS 10.0, watchOS 3.0, macOS 10.12, *)
+open class CharacteristicScoscheRhythmPlusValencellVDCOpticalData : Any {
+  public static var name: Swift.String {
+    get
+  }
+  public static var uuidString: Swift.String {
+    get
+  }
+  public var name: Swift.String {
+    get
+  }
+  public var uuidString: Swift.String {
+    get
+  }
+  public var vdcOpticalData: Swift.UInt16 {
+    get
+  }
+  public init(vdcOpticalData: Swift.UInt16)
+  public class func decode<C>(with data: Foundation.Data) -> Swift.Result<C, Swift.Error>
+  public func encode() -> Swift.Result<Foundation.Data, Swift.Error>
+  @objc deinit
+}
+@available(swift 3.1)
+@available(iOS 10.0, tvOS 10.0, watchOS 3.0, macOS 10.12, *)
+open class CharacteristicScoscheRhythmPlusValencellVDCActivityData : Any {
+  public static var name: Swift.String {
+    get
+  }
+  public static var uuidString: Swift.String {
+    get
+  }
+  public var name: Swift.String {
+    get
+  }
+  public var uuidString: Swift.String {
+    get
+  }
+  public var vdcActivityData: Swift.UInt16 {
+    get
+  }
+  public init(vdcActivityData: Swift.UInt16)
+  public class func decode<C>(with data: Foundation.Data) -> Swift.Result<C, Swift.Error>
+  public func encode() -> Swift.Result<Foundation.Data, Swift.Error>
+  @objc deinit
+}
+@available(swift 3.1)
+@available(iOS 10.0, tvOS 10.0, watchOS 3.0, macOS 10.12, *)
+open class CharacteristicScoscheRhythmPlusValencellVDCHeartRateData : Any {
+  public static var name: Swift.String {
+    get
+  }
+  public static var uuidString: Swift.String {
+    get
+  }
+  public var name: Swift.String {
+    get
+  }
+  public var uuidString: Swift.String {
+    get
+  }
+  public var vdcHeartRateData: Swift.UInt16 {
+    get
+  }
+  public init(vdcHeartRateData: Swift.UInt16)
+  public class func decode<C>(with data: Foundation.Data) -> Swift.Result<C, Swift.Error>
+  public func encode() -> Swift.Result<Foundation.Data, Swift.Error>
+  @objc deinit
+}
+@available(swift 3.1)
+@available(iOS 10.0, tvOS 10.0, watchOS 3.0, macOS 10.12, *)
+open class CharacteristicScoscheRhythmPlusValencellVDCStepRateData : Any {
+  public static var name: Swift.String {
+    get
+  }
+  public static var uuidString: Swift.String {
+    get
+  }
+  public var name: Swift.String {
+    get
+  }
+  public var uuidString: Swift.String {
+    get
+  }
+  public var vdcStepRateData: Swift.UInt16 {
+    get
+  }
+  public init(vdcStepRateData: Swift.UInt16)
+  public class func decode<C>(with data: Foundation.Data) -> Swift.Result<C, Swift.Error>
+  public func encode() -> Swift.Result<Foundation.Data, Swift.Error>
+  @objc deinit
+}
+@available(swift 3.1)
+@available(iOS 10.0, tvOS 10.0, watchOS 3.0, macOS 10.12, *)
+open class CharacteristicScoscheRhythmPlusValencellVDCStrideRateData : Any {
+  public static var name: Swift.String {
+    get
+  }
+  public static var uuidString: Swift.String {
+    get
+  }
+  public var name: Swift.String {
+    get
+  }
+  public var uuidString: Swift.String {
+    get
+  }
+  public var vdcStrideRateData: Swift.UInt16 {
+    get
+  }
+  public init(vdcStrideRateData: Swift.UInt16)
+  public class func decode<C>(with data: Foundation.Data) -> Swift.Result<C, Swift.Error>
+  public func encode() -> Swift.Result<Foundation.Data, Swift.Error>
+  @objc deinit
+}
+@available(swift 3.1)
+@available(iOS 10.0, tvOS 10.0, watchOS 3.0, macOS 10.12, *)
+open class CharacteristicScoscheRhythmPlusValencellVDCDistanceData : Any {
+  public static var name: Swift.String {
+    get
+  }
+  public static var uuidString: Swift.String {
+    get
+  }
+  public var name: Swift.String {
+    get
+  }
+  public var uuidString: Swift.String {
+    get
+  }
+  public var vdcDistanceData: Swift.UInt16 {
+    get
+  }
+  public init(vdcDistanceData: Swift.UInt16)
+  public class func decode<C>(with data: Foundation.Data) -> Swift.Result<C, Swift.Error>
+  public func encode() -> Swift.Result<Foundation.Data, Swift.Error>
+  @objc deinit
+}
+@available(swift 3.1)
+@available(iOS 10.0, tvOS 10.0, watchOS 3.0, macOS 10.12, *)
+open class CharacteristicScoscheRhythmPlusValencellVDCSpeedData : Any {
+  public static var name: Swift.String {
+    get
+  }
+  public static var uuidString: Swift.String {
+    get
+  }
+  public var name: Swift.String {
+    get
+  }
+  public var uuidString: Swift.String {
+    get
+  }
+  public var vdcSpeedData: Swift.UInt16 {
+    get
+  }
+  public init(vdcSpeedData: Swift.UInt16)
+  public class func decode<C>(with data: Foundation.Data) -> Swift.Result<C, Swift.Error>
+  public func encode() -> Swift.Result<Foundation.Data, Swift.Error>
+  @objc deinit
+}
+@available(swift 3.1)
+@available(iOS 10.0, tvOS 10.0, watchOS 3.0, macOS 10.12, *)
+open class CharacteristicScoscheRhythmPlusValencellVDCStepsData : Any {
+  public static var name: Swift.String {
+    get
+  }
+  public static var uuidString: Swift.String {
+    get
+  }
+  public var name: Swift.String {
+    get
+  }
+  public var uuidString: Swift.String {
+    get
+  }
+  public var vdcStepsData: Swift.UInt16 {
+    get
+  }
+  public init(vdcStepsData: Swift.UInt16)
+  public class func decode<C>(with data: Foundation.Data) -> Swift.Result<C, Swift.Error>
+  public func encode() -> Swift.Result<Foundation.Data, Swift.Error>
+  @objc deinit
+}
+@available(swift 3.1)
+@available(iOS 10.0, tvOS 10.0, watchOS 3.0, macOS 10.12, *)
+open class CharacteristicScoscheRhythmPlusValencellVDCCalorieRateData : Any {
+  public static var name: Swift.String {
+    get
+  }
+  public static var uuidString: Swift.String {
+    get
+  }
+  public var name: Swift.String {
+    get
+  }
+  public var uuidString: Swift.String {
+    get
+  }
+  public var vdcCalorieRateData: Swift.UInt16 {
+    get
+  }
+  public init(vdcCalorieRateData: Swift.UInt16)
+  public class func decode<C>(with data: Foundation.Data) -> Swift.Result<C, Swift.Error>
+  public func encode() -> Swift.Result<Foundation.Data, Swift.Error>
+  @objc deinit
+}
+@available(swift 3.1)
+@available(iOS 10.0, tvOS 10.0, watchOS 3.0, macOS 10.12, *)
+open class CharacteristicScoscheRhythmPlusValencellVDCTotalCaloriesData : Any {
+  public static var name: Swift.String {
+    get
+  }
+  public static var uuidString: Swift.String {
+    get
+  }
+  public var name: Swift.String {
+    get
+  }
+  public var uuidString: Swift.String {
+    get
+  }
+  public var vdcTotalCaloriesData: Swift.UInt16 {
+    get
+  }
+  public init(vdcTotalCaloriesData: Swift.UInt16)
+  public class func decode<C>(with data: Foundation.Data) -> Swift.Result<C, Swift.Error>
+  public func encode() -> Swift.Result<Foundation.Data, Swift.Error>
+  @objc deinit
+}
+@available(swift 3.1)
+@available(iOS 10.0, tvOS 10.0, watchOS 3.0, macOS 10.12, *)
+open class CharacteristicScoscheRhythmPlusValencellVDCAmbientLightData : Any {
+  public static var name: Swift.String {
+    get
+  }
+  public static var uuidString: Swift.String {
+    get
+  }
+  public var name: Swift.String {
+    get
+  }
+  public var uuidString: Swift.String {
+    get
+  }
+  public var vdcAmbientLightData: Swift.UInt16 {
+    get
+  }
+  public init(vdcAmbientLightData: Swift.UInt16)
+  public class func decode<C>(with data: Foundation.Data) -> Swift.Result<C, Swift.Error>
+  public func encode() -> Swift.Result<Foundation.Data, Swift.Error>
+  @objc deinit
+}
+@available(swift 3.1)
+@available(iOS 10.0, tvOS 10.0, watchOS 3.0, macOS 10.12, *)
+open class CharacteristicScoscheRhythmPlusValencellVDCACSignalData : Any {
+  public static var name: Swift.String {
+    get
+  }
+  public static var uuidString: Swift.String {
+    get
+  }
+  public var name: Swift.String {
+    get
+  }
+  public var uuidString: Swift.String {
+    get
+  }
+  public var vdcACSignalData: Swift.UInt16 {
+    get
+  }
+  public init(vdcACSignalData: Swift.UInt16)
+  public class func decode<C>(with data: Foundation.Data) -> Swift.Result<C, Swift.Error>
+  public func encode() -> Swift.Result<Foundation.Data, Swift.Error>
+  @objc deinit
+}
+@available(swift 3.1)
+@available(iOS 10.0, tvOS 10.0, watchOS 3.0, macOS 10.12, *)
+open class CharacteristicScoscheRhythmPlusValencellVDCRRIStatusData : Any {
+  public static var name: Swift.String {
+    get
+  }
+  public static var uuidString: Swift.String {
+    get
+  }
+  public var name: Swift.String {
+    get
+  }
+  public var uuidString: Swift.String {
+    get
+  }
+  public var vdcRRIStatusData: Swift.UInt16 {
+    get
+  }
+  public init(vdcRRIStatusData: Swift.UInt16)
+  public class func decode<C>(with data: Foundation.Data) -> Swift.Result<C, Swift.Error>
+  public func encode() -> Swift.Result<Foundation.Data, Swift.Error>
+  @objc deinit
+}
+@available(swift 3.1)
+@available(iOS 10.0, tvOS 10.0, watchOS 3.0, macOS 10.12, *)
+open class CharacteristicScoscheRhythmPlusValencellVDCRRITimestampData : Any {
+  public static var name: Swift.String {
+    get
+  }
+  public static var uuidString: Swift.String {
+    get
+  }
+  public var name: Swift.String {
+    get
+  }
+  public var uuidString: Swift.String {
+    get
+  }
+  public var vdcRRITimestampData: Swift.UInt16 {
+    get
+  }
+  public init(vdcRRITimestampData: Swift.UInt16)
+  public class func decode<C>(with data: Foundation.Data) -> Swift.Result<C, Swift.Error>
+  public func encode() -> Swift.Result<Foundation.Data, Swift.Error>
+  @objc deinit
+}
+@available(swift 3.1)
+@available(iOS 10.0, tvOS 10.0, watchOS 3.0, macOS 10.12, *)
+open class CharacteristicScoscheRhythmPlusValencellVDCRRIDataRegister1Data : Any {
+  public static var name: Swift.String {
+    get
+  }
+  public static var uuidString: Swift.String {
+    get
+  }
+  public var name: Swift.String {
+    get
+  }
+  public var uuidString: Swift.String {
+    get
+  }
+  public var vdcRRIDataRegister1Data: Swift.UInt16 {
+    get
+  }
+  public init(vdcRRIDataRegister1Data: Swift.UInt16)
+  public class func decode<C>(with data: Foundation.Data) -> Swift.Result<C, Swift.Error>
+  public func encode() -> Swift.Result<Foundation.Data, Swift.Error>
+  @objc deinit
+}
+@available(swift 3.1)
+@available(iOS 10.0, tvOS 10.0, watchOS 3.0, macOS 10.12, *)
+open class CharacteristicScoscheRhythmPlusValencellVDCRRIDataRegister2Data : Any {
+  public static var name: Swift.String {
+    get
+  }
+  public static var uuidString: Swift.String {
+    get
+  }
+  public var name: Swift.String {
+    get
+  }
+  public var uuidString: Swift.String {
+    get
+  }
+  public var vdcRRIDataRegister2Data: Swift.UInt16 {
+    get
+  }
+  public init(vdcRRIDataRegister2Data: Swift.UInt16)
+  public class func decode<C>(with data: Foundation.Data) -> Swift.Result<C, Swift.Error>
+  public func encode() -> Swift.Result<Foundation.Data, Swift.Error>
+  @objc deinit
+}
+@available(swift 3.1)
+@available(iOS 10.0, tvOS 10.0, watchOS 3.0, macOS 10.12, *)
+open class CharacteristicScoscheRhythmPlusValencellVDCRRIDataRegister3Data : Any {
+  public static var name: Swift.String {
+    get
+  }
+  public static var uuidString: Swift.String {
+    get
+  }
+  public var name: Swift.String {
+    get
+  }
+  public var uuidString: Swift.String {
+    get
+  }
+  public var vdcRRIDataRegister3Data: Swift.UInt16 {
+    get
+  }
+  public init(vdcRRIDataRegister3Data: Swift.UInt16)
+  public class func decode<C>(with data: Foundation.Data) -> Swift.Result<C, Swift.Error>
+  public func encode() -> Swift.Result<Foundation.Data, Swift.Error>
+  @objc deinit
+}
+@available(swift 3.1)
+@available(iOS 10.0, tvOS 10.0, watchOS 3.0, macOS 10.12, *)
+open class CharacteristicScoscheRhythmPlusValencellVDCRRIDataRegister4Data : Any {
+  public static var name: Swift.String {
+    get
+  }
+  public static var uuidString: Swift.String {
+    get
+  }
+  public var name: Swift.String {
+    get
+  }
+  public var uuidString: Swift.String {
+    get
+  }
+  public var vdcRRIDataRegister4Data: Swift.UInt16 {
+    get
+  }
+  public init(vdcRRIDataRegister4Data: Swift.UInt16)
+  public class func decode<C>(with data: Foundation.Data) -> Swift.Result<C, Swift.Error>
+  public func encode() -> Swift.Result<Foundation.Data, Swift.Error>
+  @objc deinit
+}
+@available(swift 3.1)
+@available(iOS 10.0, tvOS 10.0, watchOS 3.0, macOS 10.12, *)
+open class CharacteristicScoscheRhythmPlusValencellVDCRRIDataRegister5Data : Any {
+  public static var name: Swift.String {
+    get
+  }
+  public static var uuidString: Swift.String {
+    get
+  }
+  public var name: Swift.String {
+    get
+  }
+  public var uuidString: Swift.String {
+    get
+  }
+  public var vdcRRIDataRegister5Data: Swift.UInt16 {
+    get
+  }
+  public init(vdcRRIDataRegister5Data: Swift.UInt16)
+  public class func decode<C>(with data: Foundation.Data) -> Swift.Result<C, Swift.Error>
+  public func encode() -> Swift.Result<Foundation.Data, Swift.Error>
+  @objc deinit
+}
+open class CharacteristicHeartRateMeasurement : Any {
+  public static var name: Swift.String {
+    get
+  }
+  public static var uuidString: Swift.String {
+    get
+  }
+  public var name: Swift.String {
+    get
+  }
+  public var uuidString: Swift.String {
+    get
+  }
+  public var heartRate: Swift.UInt8 {
+    get
+  }
+  public var rrIntervals: Swift.UInt16 {
+    get
+  }
+  public init(heartRate: Swift.UInt8, rrIntervals: Swift.UInt16)
+  public class func decode<C>(with data: Foundation.Data) -> Swift.Result<C, Swift.Error>
+  public func encode() -> Swift.Result<Foundation.Data, Swift.Error>
+  @objc deinit
+}
+open class CharacteristicBatteryLevel : Any {
+  public static var name: Swift.String {
+    get
+  }
+  public static var uuidString: Swift.String {
+    get
+  }
+  public var name: Swift.String {
+    get
+  }
+  public var uuidString: Swift.String {
+    get
+  }
+  public var level: Swift.UInt8
+  public init(level: Swift.UInt8)
+  public class func decode<C>(with data: Foundation.Data) -> Swift.Result<C, Swift.Error>
+  public func encode() -> Swift.Result<Foundation.Data, Swift.Error>
+  @objc deinit
+}
+open class CharacteristicSoftwareRevisionString : Any {
+  public static var name: Swift.String {
+    get
+  }
+  public static var uuidString: Swift.String {
+    get
+  }
+  public var name: Swift.String {
+    get
+  }
+  public var uuidString: Swift.String {
+    get
+  }
+  public var softwareRevision: Swift.String {
+    get
+  }
+  public init(softwareRevision: Swift.String)
+  public class func decode<C>(with data: Foundation.Data) -> Swift.Result<C, Swift.Error>
+  public func encode() -> Swift.Result<Foundation.Data, Swift.Error>
+  @objc deinit
+}
+open class CharacteristicManufacturerNameString : Any {
+  public static var name: Swift.String {
+    get
+  }
+  public static var uuidString: Swift.String {
+    get
+  }
+  public var name: Swift.String {
+    get
+  }
+  public var uuidString: Swift.String {
+    get
+  }
+  public var manufacturerName: Swift.String {
+    get
+  }
+  public init(manufacturerName: Swift.String)
+  public class func decode<C>(with data: Foundation.Data) -> Swift.Result<C, Swift.Error>
+  public func encode() -> Swift.Result<Foundation.Data, Swift.Error>
+  @objc deinit
+}
+open class CharacteristicSerialNumberString : Any {
+  public static var name: Swift.String {
+    get
+  }
+  public static var uuidString: Swift.String {
+    get
+  }
+  public var name: Swift.String {
+    get
+  }
+  public var uuidString: Swift.String {
+    get
+  }
+  public var serialNumber: Swift.String {
+    get
+  }
+  public init(serialNumber: Swift.String)
+  public class func decode<C>(with data: Foundation.Data) -> Swift.Result<C, Swift.Error>
+  public func encode() -> Swift.Result<Foundation.Data, Swift.Error>
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @available(swift 3.1)
+@available(iOS 10.0, tvOS 10.0, watchOS 3.0, macOS 10.12, *)
+open class ServiceScoscheRhythmPlusSerialData : Any {
+  public static var name: Swift.String {
+    get
+  }
+  public static var uuidString: Swift.String {
+    get
+  }
+  public var name: Swift.String {
+    get
+  }
+  public var uuidString: Swift.String {
+    get
+  }
+  public static var uniformIdentifier: Swift.String {
+    get
+  }
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @available(swift 3.1)
+@available(iOS 10.0, tvOS 10.0, watchOS 3.0, macOS 10.12, *)
+open class ServiceScoscheRhythmPlusData : Any {
+  public static var name: Swift.String {
+    get
+  }
+  public static var uuidString: Swift.String {
+    get
+  }
+  public var name: Swift.String {
+    get
+  }
+  public var uuidString: Swift.String {
+    get
+  }
+  public static var uniformIdentifier: Swift.String {
+    get
+  }
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @available(swift 3.1)
+@available(iOS 10.0, tvOS 10.0, watchOS 3.0, macOS 10.12, *)
+open class ServiceScoscheRhythmPlusArmband : Any {
+  public static var name: Swift.String {
+    get
+  }
+  public static var uuidString: Swift.String {
+    get
+  }
+  public var name: Swift.String {
+    get
+  }
+  public var uuidString: Swift.String {
+    get
+  }
+  public static var uniformIdentifier: Swift.String {
+    get
+  }
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @available(swift 3.1)
+@available(iOS 10.0, tvOS 10.0, watchOS 3.0, macOS 10.12, *)
+open class ServiceScoscheRhythm24ValencellFirmware : Any {
+  public static var name: Swift.String {
+    get
+  }
+  public static var uuidString: Swift.String {
+    get
+  }
+  public var name: Swift.String {
+    get
+  }
+  public var uuidString: Swift.String {
+    get
+  }
+  public static var uniformIdentifier: Swift.String {
+    get
+  }
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @available(swift 3.1)
+@available(iOS 10.0, tvOS 10.0, watchOS 3.0, macOS 10.12, *)
+open class ServiceScoscheRhythm24UserData : Any {
+  public static var name: Swift.String {
+    get
+  }
+  public static var uuidString: Swift.String {
+    get
+  }
+  public var name: Swift.String {
+    get
+  }
+  public var uuidString: Swift.String {
+    get
+  }
+  public static var uniformIdentifier: Swift.String {
+    get
+  }
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @available(swift 3.1)
+@available(iOS 10.0, tvOS 10.0, watchOS 3.0, macOS 10.12, *)
+open class ServiceScoscheRhythm24FitFile : Any {
+  public static var name: Swift.String {
+    get
+  }
+  public static var uuidString: Swift.String {
+    get
+  }
+  public var name: Swift.String {
+    get
+  }
+  public var uuidString: Swift.String {
+    get
+  }
+  public static var uniformIdentifier: Swift.String {
+    get
+  }
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @available(swift 3.1)
+@available(iOS 10.0, tvOS 10.0, watchOS 3.0, macOS 10.12, *)
+open class ServiceScoscheRhythm24ValencellEXData : Any {
+  public static var name: Swift.String {
+    get
+  }
+  public static var uuidString: Swift.String {
+    get
+  }
+  public var name: Swift.String {
+    get
+  }
+  public var uuidString: Swift.String {
+    get
+  }
+  public static var uniformIdentifier: Swift.String {
+    get
+  }
+  @objc deinit
+}
+extension Swift.Double {
+  public var formattedTimeString: Swift.String {
+    get
+  }
+}
+extension Swift.Double {
+  public var seconds: Foundation.TimeInterval {
+    get
+  }
+  public var second: Foundation.TimeInterval {
+    get
+  }
+  public var minutes: Foundation.TimeInterval {
+    get
+  }
+  public var minute: Foundation.TimeInterval {
+    get
+  }
+  public var hours: Foundation.TimeInterval {
+    get
+  }
+  public var hour: Foundation.TimeInterval {
+    get
+  }
+  public var days: Foundation.TimeInterval {
+    get
+  }
+  public var day: Foundation.TimeInterval {
+    get
+  }
+  public var months: Foundation.TimeInterval {
+    get
+  }
+  public var month: Foundation.TimeInterval {
+    get
+  }
+  public var years: Foundation.TimeInterval {
+    get
+  }
+  public var year: Foundation.TimeInterval {
+    get
+  }
+  public var decades: Foundation.TimeInterval {
+    get
+  }
+  public var decade: Foundation.TimeInterval {
+    get
+  }
+  public var ago: Foundation.Date {
+    get
+  }
+  public var fromNow: Foundation.Date {
+    get
+  }
+}
+public enum MonitorType : Swift.String {
+  case none
+  case rhythmPlus
+  case rhythm24
+  case rhythmE
+  public static func isValidScoscheDevice(_ name: Swift.String) -> Swift.Bool
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+@objc public class ScoscheMonitor : ObjectiveC.NSObject {
+  public var batteryCharacteristic: CoreBluetooth.CBCharacteristic?
+  public var currentTimeCharacteristic: CoreBluetooth.CBCharacteristic?
+  public var r24SportModeChracteristic: CoreBluetooth.CBCharacteristic?
+  public var r24UserSettingsChracteristic: CoreBluetooth.CBCharacteristic?
+  public var r24FiveZoneHrCharacteristic: CoreBluetooth.CBCharacteristic?
+  public var r24FitDirectoryCharacteristic: CoreBluetooth.CBCharacteristic?
+  public var r24FitFileCharacteristic: CoreBluetooth.CBCharacteristic?
+  public var rPlusZonesCharacteristic: CoreBluetooth.CBCharacteristic?
+  public var r24ValencellCharacteristic: CoreBluetooth.CBCharacteristic?
+  public enum FITDownloadResponse {
+    case success
+    case fail
+    case recording
+    public static func == (a: ScoscheSDK24.ScoscheMonitor.FITDownloadResponse, b: ScoscheSDK24.ScoscheMonitor.FITDownloadResponse) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  public var deviceName: Swift.String? {
+    get
+  }
+  public var bleConnectionState: CoreBluetooth.CBPeripheralState {
+    get
+  }
+  public var manufacturerName: ScoscheSDK24.CharacteristicManufacturerNameString? {
+    get
+    set
+  }
+  public var serialNumber: Swift.String? {
+    get
+  }
+  public var softwareRevision: ScoscheSDK24.CharacteristicSoftwareRevisionString? {
+    get
+    set
+  }
+  public var signalQuality: ScoscheSDK24.CharacteristicScoscheRhythmPlusSignalQuality? {
+    get
+    set
+  }
+  public var batteryInformation: ScoscheSDK24.CharacteristicBatteryLevel? {
+    get
+    set
+  }
+  public var heartRate: ScoscheSDK24.CharacteristicHeartRateMeasurement? {
+    get
+    set
+  }
+  public var rrInterval: Swift.Double
+  public var r24SportMode: ScoscheSDK24.CharacteristicScoscheRhythm24SportMode? {
+    get
+    set
+  }
+  public var r24UserData: ScoscheSDK24.CharacteristicScoscheRhythm24UserSettings?
+  public var r24FiveZoneHr: ScoscheSDK24.CharacteristicScoscheRhythm24FiveZoneHr?
+  public var r24FitFileDirectory: ScoscheSDK24.CharacteristicScoscheRhythm24FitDirectory? {
+    get
+    set
+  }
+  public var r24FitFileInfo: ScoscheSDK24.CharacteristicScoscheRhythm24FitFileInfo?
+  public var r24ValencellInfo: [Swift.String : Any]
+  public var fitFiles: [ScoscheSDK24.FitFileMetaData]
+  public var onFitFileMetaDataUpdate: (([ScoscheSDK24.FitFileMetaData]) -> Swift.Void)?
+  public init(peripheral: CoreBluetooth.CBPeripheral)
+  @objc deinit
+  public var VDCSignal: ScoscheSDK24.CharacteristicScoscheRhythmPlusValencellVDCSignalData? {
+    get
+    set
+  }
+  public var VDCOptical: ScoscheSDK24.CharacteristicScoscheRhythmPlusValencellVDCOpticalData? {
+    get
+    set
+  }
+  public var VDCActivity: ScoscheSDK24.CharacteristicScoscheRhythmPlusValencellVDCActivityData? {
+    get
+    set
+  }
+  public var VDCHeartRate: ScoscheSDK24.CharacteristicScoscheRhythmPlusValencellVDCHeartRateData? {
+    get
+    set
+  }
+  public var VDCStepRate: ScoscheSDK24.CharacteristicScoscheRhythmPlusValencellVDCStepRateData? {
+    get
+    set
+  }
+  public var VDCStrideRate: ScoscheSDK24.CharacteristicScoscheRhythmPlusValencellVDCStrideRateData? {
+    get
+    set
+  }
+  public var VDCDistance: ScoscheSDK24.CharacteristicScoscheRhythmPlusValencellVDCDistanceData? {
+    get
+    set
+  }
+  public var VDCSpeed: ScoscheSDK24.CharacteristicScoscheRhythmPlusValencellVDCSpeedData? {
+    get
+    set
+  }
+  public var VDCSteps: ScoscheSDK24.CharacteristicScoscheRhythmPlusValencellVDCStepsData? {
+    get
+    set
+  }
+  public var VDCCalorieRate: ScoscheSDK24.CharacteristicScoscheRhythmPlusValencellVDCCalorieRateData? {
+    get
+    set
+  }
+  public var VDCTotalCalories: ScoscheSDK24.CharacteristicScoscheRhythmPlusValencellVDCTotalCaloriesData? {
+    get
+    set
+  }
+  public var VDCAmbientLight: ScoscheSDK24.CharacteristicScoscheRhythmPlusValencellVDCAmbientLightData? {
+    get
+    set
+  }
+  public var VDCACSignal: ScoscheSDK24.CharacteristicScoscheRhythmPlusValencellVDCACSignalData? {
+    get
+    set
+  }
+  public var VDCRRIStatus: ScoscheSDK24.CharacteristicScoscheRhythmPlusValencellVDCRRIStatusData? {
+    get
+    set
+  }
+  public var VDCRRITimestamp: ScoscheSDK24.CharacteristicScoscheRhythmPlusValencellVDCRRITimestampData? {
+    get
+    set
+  }
+  public var VDCRRIDataRegister1: ScoscheSDK24.CharacteristicScoscheRhythmPlusValencellVDCRRIDataRegister1Data? {
+    get
+    set
+  }
+  public var VDCRRIDataRegister2: ScoscheSDK24.CharacteristicScoscheRhythmPlusValencellVDCRRIDataRegister2Data? {
+    get
+    set
+  }
+  public var VDCRRIDataRegister3: ScoscheSDK24.CharacteristicScoscheRhythmPlusValencellVDCRRIDataRegister3Data? {
+    get
+    set
+  }
+  public var VDCRRIDataRegister4: ScoscheSDK24.CharacteristicScoscheRhythmPlusValencellVDCRRIDataRegister4Data? {
+    get
+    set
+  }
+  public var VDCRRIDataRegister5: ScoscheSDK24.CharacteristicScoscheRhythmPlusValencellVDCRRIDataRegister5Data? {
+    get
+    set
+  }
+}
+extension ScoscheSDK24.ScoscheMonitor {
+  public func setR19Zones(zones: ScoscheSDK24.CharacteristicScoscheRhythmPlusThreeZone)
+}
+extension ScoscheSDK24.ScoscheMonitor {
+  public func setSportMode(mode: ScoscheSDK24.CharacteristicScoscheRhythm24SportMode.SportModeType)
+  public func setR24UserSettings(settings: ScoscheSDK24.CharacteristicScoscheRhythm24UserSettings, hrZones: ScoscheSDK24.CharacteristicScoscheRhythm24FiveZoneHr)
+}
+extension ScoscheSDK24.ScoscheMonitor {
+  public func readR24FitDirectory()
+  public func readR24FitFile(index: Swift.UInt16)
+  public func deleteR24File(file: ScoscheSDK24.FitFileMetaData)
+}
+extension ScoscheSDK24.ScoscheMonitor {
+  public func connect()
+  public func disconnect()
+  public func readBatteryLevel()
+}
+extension ScoscheSDK24.ScoscheMonitor : CoreBluetooth.CBPeripheralDelegate {
+  @objc dynamic public func peripheral(_ peripheral: CoreBluetooth.CBPeripheral, didDiscoverServices error: Swift.Error?)
+  @objc dynamic public func peripheral(_ peripheral: CoreBluetooth.CBPeripheral, didDiscoverDescriptorsFor characteristic: CoreBluetooth.CBCharacteristic, error: Swift.Error?)
+  @objc dynamic public func peripheral(_ peripheral: CoreBluetooth.CBPeripheral, didUpdateNotificationStateFor characteristic: CoreBluetooth.CBCharacteristic, error: Swift.Error?)
+  @objc dynamic public func peripheral(_ peripheral: CoreBluetooth.CBPeripheral, didDiscoverCharacteristicsFor service: CoreBluetooth.CBService, error: Swift.Error?)
+  @objc dynamic public func peripheral(_ peripheral: CoreBluetooth.CBPeripheral, didUpdateValueFor characteristic: CoreBluetooth.CBCharacteristic, error: Swift.Error?)
+}
+extension ScoscheSDK24.ScoscheMonitor {
+  public func decodeRhythm24SportMode(sensorData: Foundation.Data)
+  public func decodeRhythm24UserData(sensorData: Foundation.Data)
+  public func decodeRhythm24FiveZoneHrData(sensorData: Foundation.Data)
+  public func decodeRhythm24FitDirectoryData(sensorData: Foundation.Data)
+  public func decodeRhythm24FitFileData(sensorData: Foundation.Data)
+  public func processDownloadFileOpCode(file: ScoscheSDK24.CharacteristicScoscheRhythm24FitFileInfo)
+}
+extension ScoscheSDK24.ScoscheMonitor {
+  public func reReadAfterErase()
+  public func updateLastSeen()
+  public func readMonitorData(characteristic: CoreBluetooth.CBCharacteristic)
+  public func sendData(data: Foundation.Data, characteristic: CoreBluetooth.CBCharacteristic, after: Dispatch.DispatchTimeInterval = .seconds(0), writeType: CoreBluetooth.CBCharacteristicWriteType = .withResponse)
+  public func asyncWriteWithResponse(data: Foundation.Data, characteristic: CoreBluetooth.CBCharacteristic)
+}
+public struct BluetoothServiceUUID {
+}
+public func ScoscheDeviceConnect(monitor: ScoscheSDK24.ScoscheMonitor, monitorView: ScoscheSDK24.SchoscheViewController)
+public func ScoscheDeviceReset()
+public func ScoscheDeviceUpdateInfo(monitor: ScoscheSDK24.ScoscheMonitor, userInfo: ScoscheSDK24.ScoscheUserInfo)
+public func ScoscheDeviceScan(monitorView: ScoscheSDK24.SchoscheViewController)
+public func ScoscheDeviceStopScan(monitorView: ScoscheSDK24.SchoscheViewController)
+public func removeBluetoothObservers(monitorView: ScoscheSDK24.SchoscheViewController)
+public func setupBluetoothObservers(monitorView: ScoscheSDK24.SchoscheViewController)
+public struct ScoscheUserInfo {
+  public var name: Swift.String
+  public var weight: Swift.Double
+  public var height: Swift.Double
+  public var restinghr: Swift.Int
+  public var maxhr: Swift.Int
+  public var dob: Swift.String
+  public var age: Swift.Int
+  public var gender: Swift.Int
+  public var unit: Swift.Int
+  public var hrZoneOne: Swift.Int
+  public var hrZoneTwo: Swift.Int
+  public var hrZoneThree: Swift.Int
+  public var hrZoneFour: Swift.Int
+}
+public func ScoscheGetAgeInMonths(date: Swift.String) -> Swift.Int
+public func ScoscheUserInfoRead() -> ScoscheSDK24.ScoscheUserInfo
+public func ScoscheUserInfoWrite(userInfo: ScoscheSDK24.ScoscheUserInfo)
+public func ScoscheDownloadFitFile(fitMetaData: ScoscheSDK24.FitFileMetaData, fileName: Swift.String, label: UIKit.UILabel, completion: @escaping (_ result: Swift.Bool) -> ())
+public var antEPOCH: Foundation.Date {
+  get
+}
+public struct FitDirectory {
+  public enum TimeFormat : Swift.UInt8 {
+    case defaultTime
+    case sincePowerUp
+    case counter
+    public init?(rawValue: Swift.UInt8)
+    public typealias RawValue = Swift.UInt8
+    public var rawValue: Swift.UInt8 {
+      get
+    }
+  }
+  public var version: Swift.UInt8 {
+    get
+  }
+  public var timeFormat: Swift.UInt8 {
+    get
+  }
+  public var currentSystemTime: Foundation.Date? {
+    get
+  }
+  public var lastModificationDate: Foundation.Date? {
+    get
+  }
+}
+public struct FitFileMetaData {
+  public enum FileType : Swift.UInt8 {
+    case nonFitFile
+    case device
+    case settings
+    case sport
+    case activity
+    case workout
+    case course
+    case schedules
+    case weight
+    case totals
+    case goals
+    case bloodPressure
+    case monitoringA
+    case activitySummary
+    case monitoringDaily
+    case monitoringB
+    case segment
+    case segmentList
+    case extdConfiguration
+    case manufacturing
+    case reserved
+    public init?(rawValue: Swift.UInt8)
+    public typealias RawValue = Swift.UInt8
+    public var rawValue: Swift.UInt8 {
+      get
+    }
+  }
+  public struct FileFlags : Swift.OptionSet {
+    public let rawValue: Swift.UInt8
+    public init(rawValue: Swift.UInt8)
+    public static let reserved: ScoscheSDK24.FitFileMetaData.FileFlags
+    public static let reservedOne: ScoscheSDK24.FitFileMetaData.FileFlags
+    public static let crypto: ScoscheSDK24.FitFileMetaData.FileFlags
+    public static let append: ScoscheSDK24.FitFileMetaData.FileFlags
+    public static let archive: ScoscheSDK24.FitFileMetaData.FileFlags
+    public static let eraseable: ScoscheSDK24.FitFileMetaData.FileFlags
+    public static let writeable: ScoscheSDK24.FitFileMetaData.FileFlags
+    public static let readable: ScoscheSDK24.FitFileMetaData.FileFlags
+    public typealias ArrayLiteralElement = ScoscheSDK24.FitFileMetaData.FileFlags
+    public typealias Element = ScoscheSDK24.FitFileMetaData.FileFlags
+    public typealias RawValue = Swift.UInt8
+  }
+  public var fileIndex: Swift.UInt16 {
+    get
+  }
+  public var fileNumber: Swift.UInt16 {
+    get
+  }
+  public var fileSubType: ScoscheSDK24.FitFileMetaData.FileType {
+    get
+  }
+  public var filePermissions: ScoscheSDK24.FitFileMetaData.FileFlags {
+    get
+  }
+  public var modificationDate: Foundation.Date? {
+    get
+  }
+  public var fileSizeInBytes: Swift.UInt32 {
+    get
+  }
+  public var isFitFile: Swift.Bool {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers final public class SystemState {
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class SchoscheViewController : UIKit.UIViewController {
+  @_Concurrency.MainActor(unsafe) public var scanningStarted: Swift.Bool
+  @_Concurrency.MainActor(unsafe) public var discoveredMonitors: [ScoscheSDK24.ScoscheMonitor]
+  @_Concurrency.MainActor(unsafe) public var monitor: ScoscheSDK24.ScoscheMonitor!
+  @_Concurrency.MainActor(unsafe) public var connected: Swift.Bool
+  @_Concurrency.MainActor(unsafe) public var sportMode: ScoscheSDK24.CharacteristicScoscheRhythm24SportMode.SportModeType
+  @_Concurrency.MainActor(unsafe) public var heartRate: Swift.Int
+  @_Concurrency.MainActor(unsafe) public var rrInterval: Swift.Double
+  @_Concurrency.MainActor(unsafe) public var restingHeartRate: Swift.Double
+  @_Concurrency.MainActor(unsafe) public var signalQuality: Swift.Bool
+  @_Concurrency.MainActor(unsafe) public var batteryLevel: Swift.Int
+  @_Concurrency.MainActor(unsafe) public var userInfo: ScoscheSDK24.ScoscheUserInfo!
+  @_Concurrency.MainActor(unsafe) public var fitFileList: [ScoscheSDK24.FitFileMetaData]
+  @_Concurrency.MainActor(unsafe) public var onBluetoothDataUpdate: ((CoreBluetooth.CBUUID) -> Swift.Void)?
+  @_Concurrency.MainActor(unsafe) public var onModeChangeAction: ((ScoscheSDK24.CharacteristicScoscheRhythm24SportMode.SportModeType) -> Swift.Void)?
+  @_Concurrency.MainActor(unsafe) public var onModeAutoChangeAction: ((ScoscheSDK24.CharacteristicScoscheRhythm24SportMode.SportModeType) -> Swift.Void)?
+  @_Concurrency.MainActor(unsafe) public var vdcSignal: Swift.Double
+  @_Concurrency.MainActor(unsafe) public var vdcOptical: Swift.Double
+  @_Concurrency.MainActor(unsafe) public var vdcHeartRate: Swift.Double
+  @_Concurrency.MainActor(unsafe) public var vdcSteps: Swift.Double
+  @_Concurrency.MainActor(unsafe) public var vdcStepRate: Swift.Double
+  @_Concurrency.MainActor(unsafe) public var vdcStrideRate: Swift.Double
+  @_Concurrency.MainActor(unsafe) public var vdcDistance: Swift.Double
+  @_Concurrency.MainActor(unsafe) public var vdcTotalCalories: Swift.Double
+  @_Concurrency.MainActor(unsafe) public var vdcCalorieRate: Swift.Double
+  @_Concurrency.MainActor(unsafe) public var vdcACSignal: Swift.Double
+  @_Concurrency.MainActor(unsafe) public var vdcSpeed: Swift.Double
+  @_Concurrency.MainActor(unsafe) public var vdcAmbientLight: Swift.Double
+  @_Concurrency.MainActor(unsafe) public var vdcRRIStatus: Swift.Double
+  @_Concurrency.MainActor(unsafe) public var vdcRRITimestamp: Swift.Double
+  @_Concurrency.MainActor(unsafe) public var vdcRRIDataRegister1: Swift.Double
+  @_Concurrency.MainActor(unsafe) public var vdcRRIDataRegister2: Swift.Double
+  @_Concurrency.MainActor(unsafe) public var vdcRRIDataRegister3: Swift.Double
+  @_Concurrency.MainActor(unsafe) public var vdcRRIDataRegister4: Swift.Double
+  @_Concurrency.MainActor(unsafe) public var vdcRRIDataRegister5: Swift.Double
+  @_Concurrency.MainActor(unsafe) open func reloadTableData()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+public enum CentralDiscoveryState {
+  case deviceAdded
+  case deviceRemoved
+  public static func == (a: ScoscheSDK24.CentralDiscoveryState, b: ScoscheSDK24.CentralDiscoveryState) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public enum CentralConnectivityState {
+  case deviceConnected
+  case deviceDisconnected
+  public static func == (a: ScoscheSDK24.CentralConnectivityState, b: ScoscheSDK24.CentralConnectivityState) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+@available(swift 3.1)
+@available(iOS 10.0, tvOS 10.0, watchOS 3.0, macOS 10.12, *)
+extension ScoscheSDK24.CharacteristicScoscheRhythm24SportMode.SportModeType : Swift.Equatable {}
+@available(swift 3.1)
+@available(iOS 10.0, tvOS 10.0, watchOS 3.0, macOS 10.12, *)
+extension ScoscheSDK24.CharacteristicScoscheRhythm24SportMode.SportModeType : Swift.Hashable {}
+@available(swift 3.1)
+@available(iOS 10.0, tvOS 10.0, watchOS 3.0, macOS 10.12, *)
+extension ScoscheSDK24.CharacteristicScoscheRhythm24SportMode.SportModeType : Swift.RawRepresentable {}
+@available(swift 3.1)
+@available(iOS 10.0, tvOS 10.0, watchOS 3.0, macOS 10.12, *)
+extension ScoscheSDK24.CharacteristicScoscheRhythm24FitFileInfo.OpCode : Swift.Equatable {}
+@available(swift 3.1)
+@available(iOS 10.0, tvOS 10.0, watchOS 3.0, macOS 10.12, *)
+extension ScoscheSDK24.CharacteristicScoscheRhythm24FitFileInfo.OpCode : Swift.Hashable {}
+@available(swift 3.1)
+@available(iOS 10.0, tvOS 10.0, watchOS 3.0, macOS 10.12, *)
+extension ScoscheSDK24.CharacteristicScoscheRhythm24FitFileInfo.OpCode : Swift.RawRepresentable {}
+@available(swift 3.1)
+@available(iOS 10.0, tvOS 10.0, watchOS 3.0, macOS 10.12, *)
+extension ScoscheSDK24.CharacteristicScoscheRhythm24FitFileInfo.FileResponse : Swift.Equatable {}
+@available(swift 3.1)
+@available(iOS 10.0, tvOS 10.0, watchOS 3.0, macOS 10.12, *)
+extension ScoscheSDK24.CharacteristicScoscheRhythm24FitFileInfo.FileResponse : Swift.Hashable {}
+@available(swift 3.1)
+@available(iOS 10.0, tvOS 10.0, watchOS 3.0, macOS 10.12, *)
+extension ScoscheSDK24.CharacteristicScoscheRhythm24FitFileInfo.FileResponse : Swift.RawRepresentable {}
+extension ScoscheSDK24.MonitorType : Swift.Equatable {}
+extension ScoscheSDK24.MonitorType : Swift.Hashable {}
+extension ScoscheSDK24.MonitorType : Swift.RawRepresentable {}
+extension ScoscheSDK24.ScoscheMonitor.FITDownloadResponse : Swift.Equatable {}
+extension ScoscheSDK24.ScoscheMonitor.FITDownloadResponse : Swift.Hashable {}
+extension ScoscheSDK24.FitDirectory.TimeFormat : Swift.Equatable {}
+extension ScoscheSDK24.FitDirectory.TimeFormat : Swift.Hashable {}
+extension ScoscheSDK24.FitDirectory.TimeFormat : Swift.RawRepresentable {}
+extension ScoscheSDK24.FitFileMetaData.FileType : Swift.Equatable {}
+extension ScoscheSDK24.FitFileMetaData.FileType : Swift.Hashable {}
+extension ScoscheSDK24.FitFileMetaData.FileType : Swift.RawRepresentable {}
+extension ScoscheSDK24.CentralDiscoveryState : Swift.Equatable {}
+extension ScoscheSDK24.CentralDiscoveryState : Swift.Hashable {}
+extension ScoscheSDK24.CentralConnectivityState : Swift.Equatable {}
+extension ScoscheSDK24.CentralConnectivityState : Swift.Hashable {}

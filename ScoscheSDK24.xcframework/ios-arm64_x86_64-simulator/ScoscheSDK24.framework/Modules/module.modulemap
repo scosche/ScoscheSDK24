@@ -1,0 +1,11 @@
+framework module ScoscheSDK24 {
+  umbrella header "ScoscheSDK24.h"
+
+  export *
+  module * { export * }
+}
+
+module ScoscheSDK24.Swift {
+    header "ScoscheSDK24-Swift.h"
+    requires objc
+}
