@@ -172,7 +172,7 @@ open class CharacteristicScoscheRhythmPlusKiloCalories : Any {
   @objc deinit
 }
 @available(swift 3.1)
-@available(iOS 10.0, tvOS 10.0, watchOS 3.0, macOS 10.12, iOS 10.0, tvOS 10.0, watchOS 3.0, macOS 10.12, *)
+@available(iOS 10.0, tvOS 10.0, watchOS 3.0, macOS 10.12, *)
 open class CharacteristicScoscheRhythmPlusBurnRate : Any {
   public static var name: Swift.String {
     get

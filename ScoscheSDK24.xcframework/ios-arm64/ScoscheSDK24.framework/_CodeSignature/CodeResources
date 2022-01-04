@@ -18,27 +18,27 @@
 		</data>
 		<key>Modules/ScoscheSDK24.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		Sn4fWd+j+FLBi43cABQ2BfzSsek=
+		0kniamI+NIWz+ExTR1WpnFmt5Bk=
 		</data>
 		<key>Modules/ScoscheSDK24.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		XVz0YzjbnPCmwsZx9j2wjGx3Tvg=
+		iz0pfUrh6OPfvJSvl6EiGp4iWmg=
 		</data>
 		<key>Modules/ScoscheSDK24.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		1XJ9iNgtBNZFdst+bf6uUPHwjGU=
+		Qv4yuC457AUrI8Bmn/QoLU9FIRI=
 		</data>
 		<key>Modules/ScoscheSDK24.swiftmodule/arm64.swiftdoc</key>
 		<data>
-		Sn4fWd+j+FLBi43cABQ2BfzSsek=
+		0kniamI+NIWz+ExTR1WpnFmt5Bk=
 		</data>
 		<key>Modules/ScoscheSDK24.swiftmodule/arm64.swiftinterface</key>
 		<data>
-		XVz0YzjbnPCmwsZx9j2wjGx3Tvg=
+		iz0pfUrh6OPfvJSvl6EiGp4iWmg=
 		</data>
 		<key>Modules/ScoscheSDK24.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		1XJ9iNgtBNZFdst+bf6uUPHwjGU=
+		Qv4yuC457AUrI8Bmn/QoLU9FIRI=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -65,42 +65,42 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ftTQ0XkCUpLkxAK0ZDtIbF0KZqcLCO9go3JGPQ+aKQo=
+			V7haw5rSHd52WMILX6JigRJihsxBKvmmaohuGPDGMu8=
 			</data>
 		</dict>
 		<key>Modules/ScoscheSDK24.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			C3991EokEC1SZaVOSv+vCyJG9f2Zrzgq9dsJDExf86U=
+			kHvga/pwZmiQ/2ZRVhuOsP0SSq1IANGiF3zva3Xdryo=
 			</data>
 		</dict>
 		<key>Modules/ScoscheSDK24.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			BLVl6Nb8Cg81k5xH7fqROxcRwevkFdvvL6wvRbv84OA=
+			g5oYF4/Ywo4Fjgu2Xi3phoQjGb5dV1+7NQ5grHy1MGk=
 			</data>
 		</dict>
 		<key>Modules/ScoscheSDK24.swiftmodule/arm64.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ftTQ0XkCUpLkxAK0ZDtIbF0KZqcLCO9go3JGPQ+aKQo=
+			V7haw5rSHd52WMILX6JigRJihsxBKvmmaohuGPDGMu8=
 			</data>
 		</dict>
 		<key>Modules/ScoscheSDK24.swiftmodule/arm64.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			C3991EokEC1SZaVOSv+vCyJG9f2Zrzgq9dsJDExf86U=
+			kHvga/pwZmiQ/2ZRVhuOsP0SSq1IANGiF3zva3Xdryo=
 			</data>
 		</dict>
 		<key>Modules/ScoscheSDK24.swiftmodule/arm64.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			BLVl6Nb8Cg81k5xH7fqROxcRwevkFdvvL6wvRbv84OA=
+			g5oYF4/Ywo4Fjgu2Xi3phoQjGb5dV1+7NQ5grHy1MGk=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
