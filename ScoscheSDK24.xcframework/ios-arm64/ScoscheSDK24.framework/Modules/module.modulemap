@@ -6,6 +6,6 @@ framework module ScoscheSDK24 {
 }
 
 module ScoscheSDK24.Swift {
-    header "ScoscheSDK24-Swift.h"
-    requires objc
+  header "ScoscheSDK24-Swift.h"
+  requires objc
 }

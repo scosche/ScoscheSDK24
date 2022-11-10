@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/ScoscheSDK24-Swift.h</key>
 		<data>
-		IhSCIwuXt62U6QEa2O2D6wZKNAw=
+		HU8+rqcCD0t363wkjrZkdgH5pRc=
 		</data>
 		<key>Headers/ScoscheSDK24.h</key>
 		<data>
@@ -14,59 +14,51 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		5P/AKN8ccLqf1rw+h9uLTj83LgY=
+		9iIvLW/vqhVB7WosyCBWvOlNzQs=
+		</data>
+		<key>Modules/ScoscheSDK24.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
+		<data>
+		jxBi7ejz2bV6GwqEdBtZcw9Elt4=
+		</data>
+		<key>Modules/ScoscheSDK24.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
+		<data>
+		5TLRJmIsy6DWyxhiDQocqyjRXXU=
 		</data>
 		<key>Modules/ScoscheSDK24.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		JTjT/8yGB2o8Y08aUUS6hhG2dBU=
+		ywzdtCTHo6HVCISE9Dh09fZx/ZA=
 		</data>
 		<key>Modules/ScoscheSDK24.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		zu9oe2XzzPhhlpFYaaag2O3gaUw=
+		5TLRJmIsy6DWyxhiDQocqyjRXXU=
 		</data>
 		<key>Modules/ScoscheSDK24.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		/jVRGzQhlLEr7+RSnYLsRaDipHI=
+		BX6Z0U7TrDe9co51sfTYvJR4ngk=
 		</data>
-		<key>Modules/ScoscheSDK24.swiftmodule/arm64.swiftdoc</key>
+		<key>Modules/ScoscheSDK24.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		JTjT/8yGB2o8Y08aUUS6hhG2dBU=
+		jxBi7ejz2bV6GwqEdBtZcw9Elt4=
 		</data>
-		<key>Modules/ScoscheSDK24.swiftmodule/arm64.swiftinterface</key>
+		<key>Modules/ScoscheSDK24.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		zu9oe2XzzPhhlpFYaaag2O3gaUw=
-		</data>
-		<key>Modules/ScoscheSDK24.swiftmodule/arm64.swiftmodule</key>
-		<data>
-		/jVRGzQhlLEr7+RSnYLsRaDipHI=
+		yuv3buHnkw3m8+yrkofb6xNWE1c=
 		</data>
 		<key>Modules/ScoscheSDK24.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		HwVWkbeyAhhCMgMevmYUa91v1A0=
+		6yAB712wVvD2UHMpszj9k/8Xd+8=
 		</data>
 		<key>Modules/ScoscheSDK24.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		6XlimVuOh5MxqZ0fKVGB0fcRx8E=
+		yuv3buHnkw3m8+yrkofb6xNWE1c=
 		</data>
 		<key>Modules/ScoscheSDK24.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		po2AsuftZRZzuv2ppSgnRTr41l8=
-		</data>
-		<key>Modules/ScoscheSDK24.swiftmodule/x86_64.swiftdoc</key>
-		<data>
-		HwVWkbeyAhhCMgMevmYUa91v1A0=
-		</data>
-		<key>Modules/ScoscheSDK24.swiftmodule/x86_64.swiftinterface</key>
-		<data>
-		6XlimVuOh5MxqZ0fKVGB0fcRx8E=
-		</data>
-		<key>Modules/ScoscheSDK24.swiftmodule/x86_64.swiftmodule</key>
-		<data>
-		po2AsuftZRZzuv2ppSgnRTr41l8=
+		Ji6WYXoSavFYJWe+5SEDeUrIack=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
-		PC4AUVu3lMI4twynVXy7Xb6h320=
+		4//jOsoC+09TRZYDyIRUxxvy6Z8=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -75,7 +67,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			252GlN9Wqmia5hIi05L17E+D859JGA7p9I+7+mny0FI=
+			CsYQukzgMLB7qYOoXgi2nNIOWcrktCGI+P2QlVcBJ2Q=
 			</data>
 		</dict>
 		<key>Headers/ScoscheSDK24.h</key>
@@ -85,95 +77,81 @@
 			84pJpJGnIxpvjMiyPM5E4uBF7BMnNztVPcSaegajRr4=
 			</data>
 		</dict>
+		<key>Modules/ScoscheSDK24.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			AZh36Napr/EGyNdgPaqfz2Jhtgic4N2wnH/UxNamtBU=
+			</data>
+		</dict>
+		<key>Modules/ScoscheSDK24.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			i94qHqgJ+ZDHU1iq7SZ82xqQtuQxWzhQL8Ap4QiydQg=
+			</data>
+		</dict>
 		<key>Modules/ScoscheSDK24.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			gdIZX8ZFwTJqgUI1fH3AWehEzj0H3QPYcJ/2ZWeSyq0=
+			Hj9+sxC2uc5Nsdo+3nKZsBN51YFdaRFEW6CmfUaJme0=
 			</data>
 		</dict>
 		<key>Modules/ScoscheSDK24.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			0AMmw7zEBfgKKprJOeZuJTPYILrx8fW1vFoy99Xsrbs=
+			i94qHqgJ+ZDHU1iq7SZ82xqQtuQxWzhQL8Ap4QiydQg=
 			</data>
 		</dict>
 		<key>Modules/ScoscheSDK24.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			tevW+GAL8yGo/YDcDfyEvXAmlMPSqfTVrDyAOpIvnGw=
+			UReSaW4+PFTJ/52pzlJRJfh28Hf4HLAETb9nvexP0y4=
 			</data>
 		</dict>
-		<key>Modules/ScoscheSDK24.swiftmodule/arm64.swiftdoc</key>
+		<key>Modules/ScoscheSDK24.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			gdIZX8ZFwTJqgUI1fH3AWehEzj0H3QPYcJ/2ZWeSyq0=
+			AZh36Napr/EGyNdgPaqfz2Jhtgic4N2wnH/UxNamtBU=
 			</data>
 		</dict>
-		<key>Modules/ScoscheSDK24.swiftmodule/arm64.swiftinterface</key>
+		<key>Modules/ScoscheSDK24.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			0AMmw7zEBfgKKprJOeZuJTPYILrx8fW1vFoy99Xsrbs=
-			</data>
-		</dict>
-		<key>Modules/ScoscheSDK24.swiftmodule/arm64.swiftmodule</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			tevW+GAL8yGo/YDcDfyEvXAmlMPSqfTVrDyAOpIvnGw=
+			FoZTi+9BQf7WaLRJ/cKCaA/9qe4ahIsoSH1CZYamUEM=
 			</data>
 		</dict>
 		<key>Modules/ScoscheSDK24.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			KH1vsUte6b73QRTMIViXhWcm7TCuEfNiCniZywy/L5A=
+			rwRlX2pRv8haK6cCl8+TXmrAkhfF0cEALOoifQ+FeH8=
 			</data>
 		</dict>
 		<key>Modules/ScoscheSDK24.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			QT+r9IogcepVMjqGkJ+4DOaTili521H6v7PKiDjBqXA=
+			FoZTi+9BQf7WaLRJ/cKCaA/9qe4ahIsoSH1CZYamUEM=
 			</data>
 		</dict>
 		<key>Modules/ScoscheSDK24.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			EzdM1R/Tttqcq5QBHPWJRXHDJeFQN2NQ87bGodIgUDo=
-			</data>
-		</dict>
-		<key>Modules/ScoscheSDK24.swiftmodule/x86_64.swiftdoc</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			KH1vsUte6b73QRTMIViXhWcm7TCuEfNiCniZywy/L5A=
-			</data>
-		</dict>
-		<key>Modules/ScoscheSDK24.swiftmodule/x86_64.swiftinterface</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			QT+r9IogcepVMjqGkJ+4DOaTili521H6v7PKiDjBqXA=
-			</data>
-		</dict>
-		<key>Modules/ScoscheSDK24.swiftmodule/x86_64.swiftmodule</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			EzdM1R/Tttqcq5QBHPWJRXHDJeFQN2NQ87bGodIgUDo=
+			MwMkuPH3w/U0n3/oXy7vn22VwKVjKoFt43gV8X+XUI8=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			5BOwbJ6f9blvAIRamJsinrnYqP69An/X44oyqpxMMdI=
+			HuuuVunAOzHougtnwLUAicGzyYj0wqCdDEgzRlYyUtE=
 			</data>
 		</dict>
 	</dict>

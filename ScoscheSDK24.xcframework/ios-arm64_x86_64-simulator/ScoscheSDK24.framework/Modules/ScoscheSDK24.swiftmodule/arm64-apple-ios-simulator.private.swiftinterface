@@ -1,6 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.5.2 (swiftlang-1300.0.47.5 clang-1300.0.29.30)
-// swift-module-flags: -target x86_64-apple-ios12.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name ScoscheSDK24
+// swift-compiler-version: Apple Swift version 5.7 (swiftlang-5.7.0.127.4 clang-1400.0.29.50)
+// swift-module-flags: -target arm64-apple-ios12.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name ScoscheSDK24
+// swift-module-flags-ignorable: -enable-bare-slash-regex
 import CoreBluetooth
 import Dispatch
 import Foundation
@@ -9,6 +10,7 @@ import Swift
 import UIKit
 import UserNotifications
 import _Concurrency
+import _StringProcessing
 public class CharacteristicScoscheRhythmPlusTotalDistance : Any {
   public static var name: Swift.String {
     get
@@ -1330,7 +1332,6 @@ extension ScoscheSDK24.ScoscheMonitor {
   public func decodeRhythm24FiveZoneHrData(sensorData: Foundation.Data)
   public func decodeRhythm24FitDirectoryData(sensorData: Foundation.Data)
   public func decodeRhythm24FitFileData(sensorData: Foundation.Data)
-  public func processDownloadFileOpCode(file: ScoscheSDK24.CharacteristicScoscheRhythm24FitFileInfo)
 }
 extension ScoscheSDK24.ScoscheMonitor {
   public func reReadAfterErase()
