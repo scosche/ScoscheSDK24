@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.7 (swiftlang-5.7.0.127.4 clang-1400.0.29.50)
+// swift-compiler-version: Apple Swift version 5.7.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)
 // swift-module-flags: -target arm64-apple-ios12.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name ScoscheSDK24
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 import CoreBluetooth
@@ -948,6 +948,56 @@ open class CharacteristicSerialNumberString : Any {
   public func encode() -> Swift.Result<Foundation.Data, Swift.Error>
   @objc deinit
 }
+open class CharacteristicCurrentTime : Any {
+  public static var name: Swift.String {
+    get
+  }
+  public static var uuidString: Swift.String {
+    get
+  }
+  public struct AdjustReasons : Swift.OptionSet, Swift.Hashable {
+    public let rawValue: Swift.UInt8
+    public init(rawValue: Swift.UInt8)
+    public static let manualTimeUpdate: ScoscheSDK24.CharacteristicCurrentTime.AdjustReasons
+    public static let externalReferenceTimeUpdate: ScoscheSDK24.CharacteristicCurrentTime.AdjustReasons
+    public static let changeOfTimeZone: ScoscheSDK24.CharacteristicCurrentTime.AdjustReasons
+    public static let changeofDaylightSavings: ScoscheSDK24.CharacteristicCurrentTime.AdjustReasons
+    public typealias ArrayLiteralElement = ScoscheSDK24.CharacteristicCurrentTime.AdjustReasons
+    public typealias Element = ScoscheSDK24.CharacteristicCurrentTime.AdjustReasons
+    public typealias RawValue = Swift.UInt8
+  }
+  public var name: Swift.String {
+    get
+  }
+  public var uuidString: Swift.String {
+    get
+  }
+  public var adjustmentReason: ScoscheSDK24.CharacteristicCurrentTime.AdjustReasons {
+    get
+  }
+  public var currentTime: ScoscheSDK24.DateTime {
+    get
+  }
+  public var dayOfWeek: ScoscheSDK24.DayOfWeek {
+    get
+  }
+  public var fractionalSeconds: Swift.Float {
+    get
+  }
+  public init(adjustmentReason: ScoscheSDK24.CharacteristicCurrentTime.AdjustReasons, currentTime: ScoscheSDK24.DateTime, dayOfWeek: ScoscheSDK24.DayOfWeek, fractionalSeconds: Swift.Float)
+  public func decode() -> Swift.Result<Foundation.Data, Swift.Error>
+  public func encode() -> Swift.Result<Foundation.Data, Swift.Error>
+  @objc deinit
+}
+extension ScoscheSDK24.CharacteristicCurrentTime : Swift.Hashable {
+  public func hash(into hasher: inout Swift.Hasher)
+  open var hashValue: Swift.Int {
+    get
+  }
+}
+extension ScoscheSDK24.CharacteristicCurrentTime : Swift.Equatable {
+  public static func == (lhs: ScoscheSDK24.CharacteristicCurrentTime, rhs: ScoscheSDK24.CharacteristicCurrentTime) -> Swift.Bool
+}
 @_hasMissingDesignatedInitializers @available(swift 3.1)
 @available(iOS 10.0, tvOS 10.0, watchOS 3.0, macOS 10.12, *)
 open class ServiceScoscheRhythmPlusSerialData : Any {
@@ -1371,6 +1421,91 @@ public func ScoscheDownloadFitFile(fitMetaData: ScoscheSDK24.FitFileMetaData, fi
 public var antEPOCH: Foundation.Date {
   get
 }
+public enum DSTOffset : Swift.UInt8 {
+  case standardTime
+  case halfHourDaylightTime
+  case daylightTime
+  case doubleDaylightTime
+  case unknown
+  public init?(rawValue: Swift.UInt8)
+  public typealias RawValue = Swift.UInt8
+  public var rawValue: Swift.UInt8 {
+    get
+  }
+}
+public enum DayOfWeek : Swift.UInt8 {
+  case unknown
+  case monday
+  case tuesday
+  case wednesday
+  case thursday
+  case friday
+  case saturday
+  case sunday
+  public static var fromCurrentDate: ScoscheSDK24.DayOfWeek {
+    get
+  }
+  public init?(rawValue: Swift.UInt8)
+  public typealias RawValue = Swift.UInt8
+  public var rawValue: Swift.UInt8 {
+    get
+  }
+}
+public enum Month : Swift.UInt8 {
+  case unknown
+  case january
+  case february
+  case march
+  case april
+  case may
+  case june
+  case july
+  case august
+  case september
+  case october
+  case november
+  case december
+  public init?(rawValue: Swift.UInt8)
+  public typealias RawValue = Swift.UInt8
+  public var rawValue: Swift.UInt8 {
+    get
+  }
+}
+public struct DateTime : Swift.Hashable {
+  public var year: Swift.UInt16? {
+    get
+  }
+  public var month: ScoscheSDK24.Month {
+    get
+  }
+  public var day: Swift.UInt8? {
+    get
+  }
+  public var hours: Swift.UInt8 {
+    get
+  }
+  public var minutes: Swift.UInt8 {
+    get
+  }
+  public var seconds: Swift.UInt8 {
+    get
+  }
+  public init(year: Swift.UInt16?, month: ScoscheSDK24.Month, day: Swift.UInt8?, hours: Swift.UInt8, minutes: Swift.UInt8, seconds: Swift.UInt8)
+  public static var fromCurrentDate: ScoscheSDK24.DateTime {
+    get
+  }
+  public init(_ from: Foundation.Date, calendar: Foundation.Calendar = Calendar(identifier: .gregorian))
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension ScoscheSDK24.DateTime : Swift.Equatable {
+  public static func == (lhs: ScoscheSDK24.DateTime, rhs: ScoscheSDK24.DateTime) -> Swift.Bool
+}
+extension ScoscheSDK24.DateTime {
+  public func encode() -> Swift.Result<Foundation.Data, Swift.Error>
+}
 public struct FitDirectory {
   public enum TimeFormat : Swift.UInt8 {
     case defaultTime
@@ -1554,6 +1689,15 @@ extension ScoscheSDK24.MonitorType : Swift.Hashable {}
 extension ScoscheSDK24.MonitorType : Swift.RawRepresentable {}
 extension ScoscheSDK24.ScoscheMonitor.FITDownloadResponse : Swift.Equatable {}
 extension ScoscheSDK24.ScoscheMonitor.FITDownloadResponse : Swift.Hashable {}
+extension ScoscheSDK24.DSTOffset : Swift.Equatable {}
+extension ScoscheSDK24.DSTOffset : Swift.Hashable {}
+extension ScoscheSDK24.DSTOffset : Swift.RawRepresentable {}
+extension ScoscheSDK24.DayOfWeek : Swift.Equatable {}
+extension ScoscheSDK24.DayOfWeek : Swift.Hashable {}
+extension ScoscheSDK24.DayOfWeek : Swift.RawRepresentable {}
+extension ScoscheSDK24.Month : Swift.Equatable {}
+extension ScoscheSDK24.Month : Swift.Hashable {}
+extension ScoscheSDK24.Month : Swift.RawRepresentable {}
 extension ScoscheSDK24.FitDirectory.TimeFormat : Swift.Equatable {}
 extension ScoscheSDK24.FitDirectory.TimeFormat : Swift.Hashable {}
 extension ScoscheSDK24.FitDirectory.TimeFormat : Swift.RawRepresentable {}

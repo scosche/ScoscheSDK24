@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/ScoscheSDK24-Swift.h</key>
 		<data>
-		HU8+rqcCD0t363wkjrZkdgH5pRc=
+		HYau5mIk/zuLx7zcmazUCD5E8mk=
 		</data>
 		<key>Headers/ScoscheSDK24.h</key>
 		<data>
@@ -14,47 +14,47 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		9iIvLW/vqhVB7WosyCBWvOlNzQs=
+		rPeLwqiD0MuZMoBQg4RWP4pqgv4=
 		</data>
 		<key>Modules/ScoscheSDK24.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		jxBi7ejz2bV6GwqEdBtZcw9Elt4=
+		bc6euXq0f+kVDdee1iJS5AEjRoU=
 		</data>
 		<key>Modules/ScoscheSDK24.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		5TLRJmIsy6DWyxhiDQocqyjRXXU=
+		+moUgeyPWKWc0t6wjGB+CzejPSc=
 		</data>
 		<key>Modules/ScoscheSDK24.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		ywzdtCTHo6HVCISE9Dh09fZx/ZA=
+		y/lLWmucyWGJxRXdUC3Hieq86bo=
 		</data>
 		<key>Modules/ScoscheSDK24.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		5TLRJmIsy6DWyxhiDQocqyjRXXU=
+		+moUgeyPWKWc0t6wjGB+CzejPSc=
 		</data>
 		<key>Modules/ScoscheSDK24.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		BX6Z0U7TrDe9co51sfTYvJR4ngk=
+		+l9mkoCQ7WFW/fC0d1DHJ5wwbh4=
 		</data>
 		<key>Modules/ScoscheSDK24.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		jxBi7ejz2bV6GwqEdBtZcw9Elt4=
+		bc6euXq0f+kVDdee1iJS5AEjRoU=
 		</data>
 		<key>Modules/ScoscheSDK24.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		yuv3buHnkw3m8+yrkofb6xNWE1c=
+		lmsQ/sFp17Q8TRorYVAHsE5lnS0=
 		</data>
 		<key>Modules/ScoscheSDK24.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		6yAB712wVvD2UHMpszj9k/8Xd+8=
+		ROSnMlWb4Qt2fdDc1wBKiTSlz3g=
 		</data>
 		<key>Modules/ScoscheSDK24.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		yuv3buHnkw3m8+yrkofb6xNWE1c=
+		lmsQ/sFp17Q8TRorYVAHsE5lnS0=
 		</data>
 		<key>Modules/ScoscheSDK24.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		Ji6WYXoSavFYJWe+5SEDeUrIack=
+		aLzisVXOq9DNMcE6sJ+le+YK9bA=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -67,7 +67,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			CsYQukzgMLB7qYOoXgi2nNIOWcrktCGI+P2QlVcBJ2Q=
+			C8arsxzB+CJEb4NkFBDoK6fkBl7IqGFFSr2MnV6NZIw=
 			</data>
 		</dict>
 		<key>Headers/ScoscheSDK24.h</key>
@@ -81,70 +81,70 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			AZh36Napr/EGyNdgPaqfz2Jhtgic4N2wnH/UxNamtBU=
+			6+LzeagLfbIV4ep+WdiAlDJ4L6I2gHnkOrS5nu+piIc=
 			</data>
 		</dict>
 		<key>Modules/ScoscheSDK24.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			i94qHqgJ+ZDHU1iq7SZ82xqQtuQxWzhQL8Ap4QiydQg=
+			8BI4XB789TlEgfqSiE3Z3PjjyzvwnH0mX0ExALR8JP4=
 			</data>
 		</dict>
 		<key>Modules/ScoscheSDK24.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Hj9+sxC2uc5Nsdo+3nKZsBN51YFdaRFEW6CmfUaJme0=
+			Q7epDWCbVJgWv96BsOtXdbgJUqXjqBRoyOXNxJHDKbU=
 			</data>
 		</dict>
 		<key>Modules/ScoscheSDK24.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			i94qHqgJ+ZDHU1iq7SZ82xqQtuQxWzhQL8Ap4QiydQg=
+			8BI4XB789TlEgfqSiE3Z3PjjyzvwnH0mX0ExALR8JP4=
 			</data>
 		</dict>
 		<key>Modules/ScoscheSDK24.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			UReSaW4+PFTJ/52pzlJRJfh28Hf4HLAETb9nvexP0y4=
+			DlvuSg8XXHS9hA5DwUXnVNHim47RiVpDXFSjOAXcHbk=
 			</data>
 		</dict>
 		<key>Modules/ScoscheSDK24.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			AZh36Napr/EGyNdgPaqfz2Jhtgic4N2wnH/UxNamtBU=
+			6+LzeagLfbIV4ep+WdiAlDJ4L6I2gHnkOrS5nu+piIc=
 			</data>
 		</dict>
 		<key>Modules/ScoscheSDK24.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			FoZTi+9BQf7WaLRJ/cKCaA/9qe4ahIsoSH1CZYamUEM=
+			vuuefry/lx3FopiudDwAyk049vewu9KceHOyyd7s7tc=
 			</data>
 		</dict>
 		<key>Modules/ScoscheSDK24.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			rwRlX2pRv8haK6cCl8+TXmrAkhfF0cEALOoifQ+FeH8=
+			Qvu+Ev/x//n2xe8uZajHrWWtXgkmLgttteGc8wJbqYE=
 			</data>
 		</dict>
 		<key>Modules/ScoscheSDK24.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			FoZTi+9BQf7WaLRJ/cKCaA/9qe4ahIsoSH1CZYamUEM=
+			vuuefry/lx3FopiudDwAyk049vewu9KceHOyyd7s7tc=
 			</data>
 		</dict>
 		<key>Modules/ScoscheSDK24.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			MwMkuPH3w/U0n3/oXy7vn22VwKVjKoFt43gV8X+XUI8=
+			V52PVuBWKfkxCsHjHk/FvoxJ4m50G7BcuZU03SBBnMI=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
